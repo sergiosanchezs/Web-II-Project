@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-size: 16px;
+  }
+body {
+    text-align: center;
+}
+
+/* ################################## */
+/* Start Header CSS */
+
+/********************************************************/
+/**************** This is the info bar ******************/
+.color-white {
+    color: #AAAAAA;
+
+}
+
+
+/********************************************************/  
+.blue-bg {
+    background-color: blue;
+}
+
+.tangerine-font {
+    font-family: 'Tangerine', cursive;
+    font-size: 2.5rem;
+}
+
+
+
+
+/* End Header CSS */
