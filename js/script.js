@@ -7,9 +7,7 @@ $(document).ready(function(){
     });
     
     $("#about").click(function() {
-        // alert("about clicked")
         main.load("about.html", function(){
-            // alert("The about page was loaded");
         });
     });
 
