@@ -27,6 +27,14 @@ body {
     color: #AAAAAA;
     font-size: .8rem !important;
 }
+footer{
+    background-color: #c9d6df;
+}
+
+footer a:hover{
+    color: #ffff;
+    text-decoration: none;
+}
 
 /* End Header CSS */
 /********************************************************/  
