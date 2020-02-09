@@ -13,6 +13,9 @@ body {
 a {
     color: #07689f;
 }
+main {
+    background-color: cadetblue !important;
+}
 
 /* ################################## */
 /* Start Header CSS */
@@ -47,7 +50,7 @@ a {
 }
 
 footer a:hover{
-    color: black;
+    color: #ffffff;
     text-decoration: none;
 }
 .row {

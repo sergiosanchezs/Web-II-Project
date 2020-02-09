@@ -15,7 +15,7 @@
     <header>
         <!-- Start Info Bar -->
         <div>
-            <ul class="nav justify-content-around bg-dark text-capitalize nav-custom ">
+            <ul class="nav justify-content-around bg-dark text-capitalize nav-custom">
                 <li class="nav-item p-2 align-self-start">+1-555-123-456</li>
                 <li class="nav-item p-2">info@tiasersquare.ca</li>
                 <li class="nav-item p-2">Open hours: Monday - Sunday 8:00AM - 9:00PM</li>
@@ -24,7 +24,7 @@
 		<!-- End Info Bar -->        
 
         <!-- Start NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
             <a class="navbar-brand tangerine-font" href="#">Tiaser Square Restaurant</a>
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTiaserMenu"
@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarTiaserMenu">
                 <ul id="navbar" class="navbar-nav mx-auto">
                     <!-- Links -->
-                    <li class="nav-item active"><a class="nav-link" href="#" id="home">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about" id="about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#menu" id="menu">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#stories" id="stories">Stories</a></li>
@@ -49,7 +49,9 @@
 
     </header>
     <!-- Start Main -->
-    <main style="background-color: cadetblue !important;"></main>
+    <main>
+        <div id="main_div"><p>This is the Home page!</p></div>
+    </main>
     <!-- End Main -->
     
     <!-- Start Footer -->
@@ -85,26 +87,29 @@
                 </div>
             </div>
             <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a href="#">Resource</a></li>
-              <li><a href="#">Resource name</a></li>
-              <li><a href="#">Another resource</a></li>
-              <li><a href="#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Locations</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms</a></li>
-            </ul>
-          </div>
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="#">Resource</a></li>
+                    <li><a href="#">Resource name</a></li>
+                    <li><a href="#">Another resource</a></li>
+                    <li><a href="#">Final resource</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
         </div>
-        <div><p class="copyright">© All rights reserved. Designed by: Sergio Sanchez, Sergio Pereira & Tiago Soriano</p></div>
-      </footer>
+        <div>
+            <p class="copyright">© All rights reserved. Designed by: Sergio Sanchez, Sergio Pereira & Tiago Soriano</p>
+        </div>
+    </footer>
     <!-- End Footer -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
