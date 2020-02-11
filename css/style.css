@@ -13,9 +13,9 @@ body {
 a {
     color: #07689f;
 }
-main {
+/* main {
     background-color: cadetblue !important;
-}
+} */
 
 /* ################################## */
 /* Start Header CSS */
@@ -96,6 +96,38 @@ footer a:hover{
 .copyright{
     color: #ffffff;
     font-size: 0.75em;
+    margin-bottom: 0;
 }
 /* End Footer CSS */
 /********************************************************/  
+
+/********************************************************/
+/* Secondary Pages */
+
+/* Stories */
+#testimonial-carousel{
+    text-align: center;
+    background-color: #a8d8ea;
+}
+.carousel-item{
+    padding-bottom: 50px;
+    font-family: 'Merriweather', serif;
+}
+.carousel-item h3{
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 500;
+    padding: 6% 17%;
+}
+.carousel-item h2{
+    color: #ffffff;
+    line-height: 1.32;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 6% 17%;
+}
+.client-img{
+    border-radius: 100%;
+    width: 10%;
+    margin: 20px;
+}

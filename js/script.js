@@ -1,5 +1,6 @@
 $(document).ready(function(){
     
+    // Adding the active class to the current page
     $("#home").addClass("active");
 
     var main = $("main");
@@ -38,6 +39,10 @@ $(document).ready(function(){
         });
     });
     $("#home").click(function(){
+        $("a").removeClass("active");
+        $("#home").addClass("active");
+    });
+    $("#logo").click(function(){
         $("a").removeClass("active");
         $("#home").addClass("active");
     });
