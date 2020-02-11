@@ -5,6 +5,8 @@ $(document).ready(function(){
 
     var main = $("main");
 
+    main.load("home.html");
+
     $("#bookATable").click(function() { 
         main.load("bookATable.html", function(){
             $("a").removeClass("active");
@@ -39,12 +41,16 @@ $(document).ready(function(){
         });
     });
     $("#home").click(function(){
-        $("a").removeClass("active");
-        $("#home").addClass("active");
+        main.load("home.html", function(){
+            $("a").removeClass("active");
+            $("#home").addClass("active");
+        });
     });
     $("#logo").click(function(){
-        $("a").removeClass("active");
-        $("#home").addClass("active");
+        main.load("home.html", function(){
+            $("a").removeClass("active");
+            $("#home").addClass("active");
+        });
     });
 });
 
