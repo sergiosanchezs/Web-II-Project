@@ -1,8 +1,6 @@
 $(document).ready(function(){
     
     // Adding the active class to the current page
-    $("#home").addClass("active");
-
     var main = $("main");
 
     main.load("home.html");
