@@ -97,6 +97,11 @@ footer a:hover{
     font-size: 0.75em;
     margin-bottom: 0;
 }
+
+#instagram_imgs img {
+    height: 7%;
+}
+
 /* End Footer CSS */
 /********************************************************/  
 
