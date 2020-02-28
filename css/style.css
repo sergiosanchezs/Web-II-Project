@@ -87,20 +87,18 @@ footer a:hover{
     color: #ffffff;
     text-decoration: none;
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0rem;
-}
+
 .copyright{
     color: #ffffff;
     font-size: 0.75em;
     margin-bottom: 0;
 }
 
-#instagram_imgs img {
-    height: 7%;
-}
+.instagram_imgs {
+    max-height: 250px;
+    min-width: 80px;
+    /* min-height: 100px; */
+} 
 
 /* End Footer CSS */
 /********************************************************/  
