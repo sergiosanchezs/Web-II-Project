@@ -1,50 +1,6 @@
 <script src="js/home.js"></script>
-<style>
-#home_page {
-  text-align: center;
-  background-image: url(../images/bg_1.jpg);
-  background-position: center center !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .8;
-  position: relative;
-  min-height: 763px; 
-  /* z-index: -1; */
-}
+<link rel="stylesheet" href="css/home.css">
 
-.overlay2{
-    background-color: rgba(0, 0, 0, .7);
-    height: 763px;
-}
-/********************************/
-.tangerine_font {
-  font-family: 'Tangerine', cursive;
-  font-size: 7rem;
-  color: #2B94D1 !important;
-  font-weight: 900;
-  transition: all 0.3s ease 0s;
-}
-.slogan {
-  font-size: 3em;
-  color: whitesmoke;
-  text-transform: uppercase;
-  /* padding-bottom: 60px; */
-  transition: all 0.3s ease 0s;
-}
-
-.plates_img {
-  text-align: center;
-  object-fit: cover;
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
-}
-.wl-6 {
-    min-width: 600px;
-}
-
-
-</style>
 <div id="home_page" class="container-flex">
     <div class="overlay2">
         <div class="col-12 d-block">
@@ -61,10 +17,34 @@
                 <div class="col-lg-3 col-md-12 py-4 justify-content-left slogan">food</div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-6"><img class="plates_img mx-3 mt-3 rounded-circle" src="images/bandeja-paisa.jpg"></div>
-                <div class="col-lg-3 col-sm-6"><img class="plates_img mx-3 mt-3 rounded-circle" src="images/mute-santandereano.jpg"></div>
-                <div class="col-lg-3 col-sm-6"><img class="plates_img mx-3 mt-3 rounded-circle" src="images/br_2.jpg"></div>
-                <div class="col-lg-3 col-sm-6"><img class="plates_img mx-3 mt-3 rounded-circle" src="images/br_1.jpg"></div>
+              <div class="card col-lg-3 col-sm-12" style="width: 18rem;">
+                <img class="plates_img justify-content-center card-img-top rounded-circle" src="images/bandeja-paisa.jpg" alt="Picture of Bandeja Paisa">
+                <div class="card-body">
+                  <h5 class="card-title">Bandeja Paisa</h5>
+                  <p class="card-text">Red beans, fried pork rind, rice, meat, fried egg, platain, pork sausage, arepa and avocado.</p>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-sm-12" style="width: 18rem;">
+                <img class="plates_img justify-content-center card-img-top rounded-circle" src="images/mute-santandereano.jpg" alt="Picture of Mute Santandereano">
+                <div class="card-body">
+                  <h5 class="card-title">Mute Santandereano</h5>
+                  <p class="card-text">Soup with beef, beef ribs, pork meat, tripe, pasta, hominy corn, potatoes, pumpkin, chickpeas, canary beans, and carrots.</p>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-sm-12" style="width: 18rem;">
+                <img class="plates_img justify-content-center card-img-top rounded-circle" src="images/br_2.jpg" alt="Picture of Moqueca">
+                <div class="card-body">
+                  <h5 class="card-title">Moqueca</h5>
+                  <p class="card-text">Halibut, swordfish or cor, lime, olive oil, onions, paprika, red pepper, cilantro, garlic and coconut milk.</p>
+                </div>
+              </div>
+              <div class="card col-lg-3 col-sm-12" style="width: 18rem;">
+                <img class="plates_img justify-content-center card-img-top rounded-circle" src="images/br_1.jpg" alt="Picture of Feijoada">
+                <div class="card-body">
+                  <h5 class="card-title">Feijoada</h5>
+                  <p class="card-text">Black beans, onions, ham, ham hocks, bacon, bay leaves, cilantro, fresh parsley.</p>
+                </div>
+              </div>
             </div>
         </div>
     </div>
