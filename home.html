@@ -1,4 +1,71 @@
 <script src="js/home.js"></script>
-<div>
-    <p>Hello this is Home</p>
+<style>
+#home_page {
+  text-align: center;
+  background-image: url(../images/bg_1.jpg);
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .8;
+  position: relative;
+  min-height: 763px; 
+  /* z-index: -1; */
+}
+
+.overlay2{
+    background-color: rgba(0, 0, 0, .7);
+    height: 763px;
+}
+/********************************/
+.tangerine_font {
+  font-family: 'Tangerine', cursive;
+  font-size: 7rem;
+  color: #2B94D1 !important;
+  font-weight: 900;
+  transition: all 0.3s ease 0s;
+}
+.slogan {
+  font-size: 3em;
+  color: whitesmoke;
+  text-transform: uppercase;
+  /* padding-bottom: 60px; */
+  transition: all 0.3s ease 0s;
+}
+
+.plates_img {
+  text-align: center;
+  object-fit: cover;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+.wl-6 {
+    min-width: 600px;
+}
+
+
+</style>
+<div id="home_page" class="container-flex">
+    <div class="overlay2">
+        <div class="col-12 d-block">
+            <div class="row py-3">&nbsp;</div>
+            <div class="row justify-content-center py-3 align-middle ">
+                <div class="col-lg-6 col-md-12 py-4 tangerine_font">Tiaser</div>
+                <div class="col-lg-6 col-md-12 py-4 tangerine_font">Square</div>
+            </div>
+            <div class="row py-3">&nbsp;</div>
+            <div class="row justify-content-center py-3 align-middle">
+                <div class="col-lg-3 col-md-12 py-4 justify-content-right slogan">Colombian</div>
+                <div class="col-lg-3 col-md-12 py-4 justify-content-left slogan">and</div>
+                <div class="col-lg-3 col-md-12 py-4 justify-content-right slogan">Brazilian</div>
+                <div class="col-lg-3 col-md-12 py-4 justify-content-left slogan">food</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6"><img class="plates_img mx-3 mt-3 rounded-circle" src="images/bandeja-paisa.jpg"></div>
+                <div class="col-lg-3 col-sm-6"><img class="plates_img mx-3 mt-3 rounded-circle" src="images/mute-santandereano.jpg"></div>
+                <div class="col-lg-3 col-sm-6"><img class="plates_img mx-3 mt-3 rounded-circle" src="images/br_2.jpg"></div>
+                <div class="col-lg-3 col-sm-6"><img class="plates_img mx-3 mt-3 rounded-circle" src="images/br_1.jpg"></div>
+            </div>
+        </div>
+    </div>
 </div>
