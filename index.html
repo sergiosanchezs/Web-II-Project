@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Tangerine&display=swap" rel="stylesheet">
     <title>Tiaser Restaurant</title>
@@ -107,14 +108,45 @@
             </div>
 
             <div class="col-lg-3 col-md-6 pt-4">
-                <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                </ul>
+                <h5>Subscription</h5>
+                <form id="emailSubsForm" action="">
+                    <div class="d-flex justify-content-center flex-column px-4">
+                        <label for="nameInput">Name</label>
+                        <input id="nameInput" type="text" name="nameInput" title="Please enter your full name (first and last name)." placeholder="Name">
+                        <label for="emailInput">Email</label>
+                        <input id="emailInput" type="email" name="emailInput" title="Please enter your email address." placeholder="Email">
+                        <input class="ui-button ui-widget ui-corner-all" id="emailSubsBtn" type="submit" name="Subscribe" value="Subscribe">
+                    </div>
+                </form>
+                
+                <!-- Modal to confirm the subscription to the email news -->
+                <div id="confirmModal" title="Subscription Confirmation">
+                    <p>Just one step more to finalize your subscription!</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="row">Name:</div>
+                            <div class="row">Email:</div>
+                        </div>
+                        <div class="col-10">
+                            <div class="row text-capitalize" id="nameModal">[Full Name]</div>
+                            <div class="row text-lowercase" id="emailModal">[email@email.com]</div>
+                        </div>
+                    </div>
+                    <br>
+                    <p>This is the information you have entered? If yes, click OK to finalize.</p>
+                </div>
+
+                <!-- Modal to give thanks of the subscription to the email news -->
+                <div id="subscribeModal" title="Subscription Confirmed">
+                    <p>Congratulations! You have subscribe successfully to our community email news.</p>
+                    <p id="emailModal"></p>
+                </div>
             </div>
+            
+           
+
+            
+
         </div>
         <div>
             <p class="footer-copyright text-center py-3">© All rights reserved. Designed by: Sergio Sanchez, Sergio Pereira & Tiago Soriano</p>
@@ -126,6 +158,8 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
