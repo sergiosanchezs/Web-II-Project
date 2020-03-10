@@ -14,6 +14,15 @@ a {
     color: #07689f;
 }
 
+h1{
+    font-size: 7rem;
+    font-weight: 900 !important;
+    line-height: 5.8rem;
+}
+h2{
+    font-size: 3em;
+}
+
 /* ################################## */
 /* Start Header CSS */
 

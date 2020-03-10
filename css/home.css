@@ -16,17 +16,15 @@
 /********************************/
 .tangerine_font {
   font-family: 'Tangerine', cursive;
-  font-size: 7rem;
   color: #2B94D1 !important;
-  font-weight: 900;
   transition: all 0.3s ease 0s;
 }
+
 .slogan {
-  font-size: 3em;
   color: whitesmoke;
   text-transform: uppercase;
-  /* padding-bottom: 60px; */
-  transition: all 0.3s ease 0s;
+  line-height: 2.6rem;
+  transition: all 0.5s ease 0s;
 }
   
 .plates_img {
