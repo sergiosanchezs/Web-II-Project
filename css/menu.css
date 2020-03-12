@@ -1,0 +1,21 @@
+.food-section{
+    padding: 40px 100px;
+}
+
+.section-heading{
+    font-size: 3.5rem;
+    line-height: 1.5;
+    margin-bottom: 2%;
+}
+
+.pricing-column{
+    padding: 4%;
+}
+
+.food-img-size{
+    padding: 3%;
+}
+
+.food-img-rounded{
+    border-radius: 10%;
+}
