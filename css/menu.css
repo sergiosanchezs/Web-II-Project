@@ -19,3 +19,19 @@
 .food-img-rounded{
     border-radius: 10%;
 }
+
+.card{
+    border: none;
+}
+
+.card-title {
+    padding-bottom: 2%;
+}
+
+hr {
+    border-style: none;
+    border-top-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    width: 90%;
+}
