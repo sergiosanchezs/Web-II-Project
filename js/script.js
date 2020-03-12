@@ -3,6 +3,7 @@ $(document).ready(function(){
     // hide Modals
     $("#subscribeModal").hide();
     $("#confirmModal").hide();
+    $('#imgF1').zoom();
 
     // Adding the active class to the current page
     var main = $("main");
