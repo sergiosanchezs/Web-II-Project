@@ -1,5 +1,7 @@
 $(document).ready(function(){
-    
+    titleElement = $( "#title" );
+    // titleElement.hide();
+
     setTimeout(bouncingCardsEffect, 3000);
 
     function bouncingCardsEffect(){
@@ -29,5 +31,10 @@ $(document).ready(function(){
             
         }
     }
+
+    // runinng the title pulstate effect
+    setTimeout(function() {
+        titleElement.show( "pulsate", 5000); 
+      }, 1000 );
     
 });
