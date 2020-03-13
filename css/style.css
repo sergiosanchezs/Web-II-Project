@@ -14,15 +14,17 @@ a {
     color: #07689f;
 }
 
-h1{
+h1 {
     font-size: 7rem;
     font-weight: 900 !important;
     line-height: 5.8rem;
 }
-h2{
+h2 {
     font-size: 3em;
 }
-
+.row {
+    margin: 0;
+}
 /* ################################## */
 /* Start Header CSS */
 
@@ -97,8 +99,8 @@ footer a:hover{
     text-decoration: none;
 }
 
-.copyright{
-    color: #ffffff;
+.footer-copyright{
+    /* color: #ffffff; */
     font-size: 0.75em;
     margin-bottom: 0;
 }
@@ -109,35 +111,37 @@ footer a:hover{
     /* min-height: 100px; */
 } 
 
-        .zoom p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
-
-		/* these styles are for the demo, but are not required for the plugin */
-		.zoom {
-			display:inline-block;
-			position: relative;
-		}
-		
-		/* magnifying glass icon */
-		.zoom:after {
-			content:'';
-			display:block; 
-			width:33px; 
-			height:33px; 
-			position:absolute; 
-			top:0;
-			right:0;
-			background:url(icon.png);
-		}
-
-		.zoom img {
-			display: block;
-		}
-
 #emailSubsForm label.error {
     margin-left: 10px;
     width: auto;
     display: inline-block;
     color: darkred;
+}
+
+/****** ZOOM Classes ******/
+
+.zoom p { position:absolute; top:3px; right:28px; color:#555; font:bold 13px/1 sans-serif;}
+
+/* these styles are for the demo, but are not required for the plugin */
+.zoom {
+    display:inline-block;
+    position: relative;
+}
+
+/* magnifying glass icon */
+.zoom:after {
+    content:'';
+    display:block; 
+    width:33px; 
+    height:33px;  
+    position:absolute; 
+    top:0;
+    right:0;
+    background:url(/css/images/icon.png);
+}
+
+.zoom img {
+    display: block;
 }
 
 /* End Footer CSS */
