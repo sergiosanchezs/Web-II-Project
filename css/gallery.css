@@ -10,6 +10,10 @@
     box-shadow: 0 0 2px #999;
 }
 
+.wrapper {
+    padding: 1% 15%;
+}
+
 /** Carousel **/
 
 .jcarousel {

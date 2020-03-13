@@ -3,6 +3,12 @@ $(document).ready(function(){
     // hide Modals
     $("#subscribeModal").hide();
     $("#confirmModal").hide();
+    $('#imgF1').zoom();
+    $('#imgF2').zoom();
+    $('#imgF3').zoom();
+    $('#imgF4').zoom();
+    $('#imgF5').zoom();
+    $('#imgF6').zoom();
 
     // Adding the active class to the current page
     var main = $("main");
