@@ -23,6 +23,8 @@ h2{
     font-size: 3em;
 }
 
+
+
 /* ################################## */
 /* Start Header CSS */
 
@@ -84,6 +86,9 @@ h2{
 /* End Header CSS */
 /********************************************************/  
 
+.row {
+    margin: 0;
+}
 
 /********************************************************/  
 /* Start Footer */
@@ -97,8 +102,7 @@ footer a:hover{
     text-decoration: none;
 }
 
-.copyright{
-    color: #ffffff;
+.footer-copyright{
     font-size: 0.75em;
     margin-bottom: 0;
 }
