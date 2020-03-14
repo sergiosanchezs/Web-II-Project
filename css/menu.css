@@ -35,3 +35,12 @@ hr {
     border-width: 1px;
     width: 90%;
 }
+
+/* Effects */
+.pricing-card{
+    display: none;
+}
+
+/* #breakfast {
+    display: none;
+} */
