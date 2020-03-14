@@ -3,6 +3,12 @@ $(document).ready(function(){
     // hide Modals
     $("#subscribeModal").hide();
     $("#confirmModal").hide();
+    $('#imgF1').zoom();
+    $('#imgF2').zoom();
+    $('#imgF3').zoom();
+    $('#imgF4').zoom();
+    $('#imgF5').zoom();
+    $('#imgF6').zoom();
 
     // Adding the active class to the current page
     var main = $("main");
@@ -99,13 +105,15 @@ $(document).ready(function(){
 
     // On every keyup transform the email text to capitalize if empty else lowercase
     // Activating the tooltip at the end
-    $("#emailInput").keyup(function () {  
-        if (this.val() == ""){
+    $("#emailInput").keyup(function () {
+        value = $("#emailInput").val();  
+        if (value == ""){
             $(this).css('textTransform', 'capitalize');  
         } else {
             $(this).css('textTransform', 'lowercase');
         }
     }).tooltip();
+<<<<<<< HEAD
 
     // $("#bookATable").click(function() { 
     //     main.load("bookATable.html", function(){
@@ -154,5 +162,7 @@ $(document).ready(function(){
     // });
 
     
+=======
+>>>>>>> f58c06b9477c84105b65741ccd4a5d9c15de2a1f
   
 });
