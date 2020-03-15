@@ -1,6 +1,13 @@
 $(document).ready(function(){
-    titleElement = $( "#title" );
-    // titleElement.hide();
+    $('#home_img1').zoom();
+    $('#home_img2').zoom();
+    $('#home_img3').zoom();
+    $('#home_img4').zoom();
+
+    titleElement = $( "#home_title" );
+    subTitleElement = $( "#home_subtitle" );
+    titleElement.hide();
+    subTitleElement.hide();
 
     setTimeout(bouncingCardsEffect, 3000);
 
@@ -33,8 +40,12 @@ $(document).ready(function(){
     }
 
     // runinng the title pulstate effect
-    setTimeout(function() {
-        titleElement.show( "pulsate", 5000); 
-      }, 1000 );
+    // setTimeout( showTitlte, 100 );
+
+    function showTitlte() {
+        titleElement.toggle( "blind", {}, 1600);
+        subTitleElement.toggle( "fade", {}, 1600);
+    }
     
+    showTitlte()
 });
