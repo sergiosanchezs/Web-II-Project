@@ -6,6 +6,9 @@
     font-size: 3.5rem;
     line-height: 1.5;
     margin-bottom: 2%;
+    font-family: 'Tangerine', cursive;
+    color: #2B94D1 !important;
+    font-weight: 300
 }
 
 .pricing-column{
@@ -37,10 +40,9 @@ hr {
 }
 
 /* Effects */
-.pricing-card{
-    display: none;
-}
 
-/* #breakfast {
-    display: none;
-} */
+.heading-effect{
+    font-size: 6rem;
+    line-height: 1.05;
+    margin-bottom: 2%;
+}
