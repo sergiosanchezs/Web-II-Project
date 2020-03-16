@@ -1,0 +1,89 @@
+* {
+box-sizing: border-box;
+}
+
+.bg-img {
+/* The image used */
+background-image: url("../images/bg_1.jpg");
+
+min-height: 600px;
+
+/* Center and scale the image */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 10vh;
+    grid-template-columns: repeat(6, 120px);
+    grid-template-rows: minmax(60px, auto) repeat(1, 85px);
+}
+
+label{
+    padding-top: 28px;
+}
+
+/* Add styles to the form container */
+.container {
+position: absolute;
+left: 0;
+margin: 100px;
+max-width: 750px;
+padding: 16px;
+background-color: white;
+min-height: 400px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 80%;
+padding: 10px;
+margin: 20px;
+border: none;
+background: #f1f1f1;
+grid-column: span 2;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit button */
+.btn-contact {
+background-color: #145EFF;
+color: white;
+margin-top: 15px;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+width: 75%;
+opacity: 0.9;
+}
+
+.btn-contact:hover {
+opacity: 1;
+}
+
+.tangerine_font {
+    line-height: -2.6rem;
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    font-weight: normal;
+    font-size: 100px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 0;
+    font-family: 'Tangerine', cursive;
+    color: #2B94D1 !important;
+    transition: all 0.3s ease 0s;
+  }
