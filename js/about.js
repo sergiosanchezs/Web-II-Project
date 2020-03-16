@@ -1,44 +1,29 @@
 $(document).ready(function(){
-    // setTimeout(() => {  // After 1 second this will be executed!
-    //     $("#about_test").html("ABOUT is Executing properly!");
-    // }, 1000);
 
-    $( "#tabs" ).tabs({
-        event: "mouseover",
+	$( "#tabs" ).tabs({
         collapsible: true
-	  });
+	});
+	
+	var title = $( ".slogan_about" );
+	var subTitle = $( "#title" );
+
+	title.hide();
+	subTitle.hide();
+	
+	setTimeout(function() {
+		title.show("fade", 1000);
+	}, 300);
+
+	setTimeout(function() {
+		subTitle.show("fade", 1000);
+	}, 300);
 
 	var main = $("main");
 
 	$(".btn-accessibility").click(function() {
 		main.load("accessibility.html");
 	});
-	  
-	//   $(".number").counterUp({delay: 10, time: 1000});
 
-    //   var counter = function() {
-		
-	// 	$('#section-counter').waypoint( function( direction ) {
+	$(".number").counterUp({delay: 10, time: 2000});
 
-	// 		if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-
-	// 			var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-	// 			$('.number').each(function(){
-	// 				var $this = $(this),
-	// 					num = $this.data('number');
-	// 					console.log(num);
-	// 				$this.animateNumber(
-	// 				  {
-	// 				    number: num,
-	// 				    numberStep: comma_separator_number_step
-	// 				  }, 7000
-	// 				);
-	// 			});
-				
-	// 		}
-
-	// 	} , { offset: '95%' } );
-
-	// }
-	// counter();
 });

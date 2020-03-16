@@ -1,27 +1,46 @@
-/* #about_page {
-    text-align: center;
-    position: relative;
-    margin: 90px;
-    min-height: auto;
-    background-image: url(../images/bg_1.jpg);
-    background-position: left left !important;
+section {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.img {
+    background-image: url(../images/chef1.jpg);
+    background-position: center center !important;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-Changes all paragraphs color
-  .p {
-      color: rgba(0,0,0,.6); 
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 20px;
+}
+
+.img2 {
+    background-image: url(../images/chef2.png);
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    margin-top: 20px;
+}
+
+.tangerine_font {
+    font-family: 'Tangerine', cursive;
+    color: #2B94D1 !important;    
   }
 
-  .tangerine_font {
-    font-family: 'Tangerine', cursive;
-    color: #2B94D1 !important;
-    transition: all 0.3s ease 0s;
-  }
+  h2 {
+    position: relative;
+    margin-top: auto;
+    padding: 1.5%;
+    z-index: 0;
+}
 
   .slogan_about {
     line-height: -2.6rem;
-    transition: all 0.5s ease 0s;
     position: absolute;
     top: 45px;
     left: 0;
@@ -31,126 +50,39 @@ Changes all paragraphs color
     display: block;
     margin-top: 0;
     margin-bottom: 0;
-    z-index: 0;
+    z-index: 1;
   }
 
-  .h2_title {
-      position: relative;
-      margin-top: auto;
-      padding: 1.5%;
-      z-index: .5;
-  }
-
-  .phrase_A {
-      font-weight: 100;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: left;
-  }
-
-  .container_about {
-    width: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    min-width: 200px !important; }
-
-.ftco-wrap-about {
-    background-position: center center !important; }
-    .ftco-wrap-about .heading-section h2 {
-        font-weight: 600 !important; }
-    .ftco-wrap-about .img {
-        width: 100%; }
-
-.img1 {
-    vertical-align: middle;
-    border-style: none; 
-    margin-left: 30px;
-    margin-bottom: 150px;
-    background-repeat: no-repeat;
-    background-position: center center !important;
-    background-size: cover;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 1vh;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: minmax(60px, auto) repeat(3, 100px);
-}
-
-section {
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;
-}
-
-#tabs {
-    margin-top: 70px;
-    
-}
-
-.number {
-    font-family: 'Tangerine', cursive;
-    color: #2B94D1 !important;
-    transition: all 0.3s ease 0s;
-    line-height: -2.6rem;
-    transition: all 0.5s ease 0s;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    right: 0;
-    font-weight: 400;
-    font-size: 100px;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 0;
-    z-index: 0;
-}
-
-#about_img1 {
-    margin-top: 10px;
-    margin-bottom: 60px;
-}
-
-#about_img2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-#about_img3 {
-    margin-top: 60px;
-    margin-bottom: 10px;
-}
-
-.phone {
+  .phone {
     font-size: 30px;
     font-weight: 700;
     margin-top: 1rem;
     color: #2B94D1 !important;
 }
 
-#text-wrap2 {
+p, span {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.phrase_A {
+    text-align: center;
+    max-width: 100%;
+    margin-left: 7%;
+}
+
+.date {
     text-align: left;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: large;
 }
 
-#section-counter {
-    display: grid;
-} */
-
-.img1{
-    background-image: "images/Ser1stPic.jpeg"; 
-    
+.number {
+    font-weight: 600;
+    font-size: 44px;
+    color: #2B94D1 !important;
+    display: block;
+    line-height: 1;
 }
 
-.img2{
-    background-image: "images/Ser2ndPic.jpeg"; 
-    
-}
-
-.img3{
-    background-image: "images/TiagoPic.jpeg"; 
-    
+.data {
+    text-transform: uppercase;
 }
