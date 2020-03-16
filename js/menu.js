@@ -17,10 +17,10 @@ $(document).ready(function(){
         breakfastTitle.effect("pulsate", function(){
             breakfastTitle.addClass("heading-effect");
         });
-    }, 700);
+    }, 600);
 
     // Cards animation
-    setTimeout(unFoldCards, 2200);
+    setTimeout(unFoldCards, 2000);
     
     function unFoldCards() {
         cards.show("drop", {direction:'left'}, 1000);
@@ -47,8 +47,8 @@ $(document).ready(function(){
             titleID.effect("pulsate", function() {
                 titleID.addClass("heading-effect");
             });
-        }, 700);
+        }, 600);
 
-        setTimeout(unFoldCards, 2200);
+        setTimeout(unFoldCards, 2000);
     });
 });

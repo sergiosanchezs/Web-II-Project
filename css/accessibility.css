@@ -1,0 +1,38 @@
+.accessibility-heading{
+    font-size: 6rem;
+    line-height: 1.2;
+    font-family: 'Tangerine', cursive;
+    color: #2B94D1 !important;
+}
+
+.accessibility-text{
+    padding: 0 20%;
+    line-height: 1.2;
+}
+
+.accessibility-form{
+    text-align: left;
+}
+
+.form-group{
+    margin: 25px 0;
+}
+
+.accessibility-submit-btn{
+    text-align: center;
+}
+
+#disabilitySubmitForm label.error {
+    width: auto;
+    display: block;
+    color: rgb(168, 1, 1);
+}
+
+.date-div{
+    display: inherit;
+}
+
+.date-div img{
+    margin-left: 8px;
+    width: 33px;
+}
