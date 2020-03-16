@@ -7,6 +7,12 @@ $(document).ready(function(){
         event: "mouseover",
         collapsible: true
 	  });
+
+	var main = $("main");
+
+	$(".btn-accessibility").click(function() {
+		main.load("accessibility.html");
+	});
 	  
 	//   $(".number").counterUp({delay: 10, time: 1000});
 
