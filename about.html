@@ -1,20 +1,35 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
+
+
 <link rel="stylesheet" href="css/about.css">
 <script src="js/about.js"></script>
 
 
-<section class="ftco-section ftco-wrap-about">
-    <div class="container_about" id="about_page">
+<section>
+    <div class="container">
         <div class="row">
-            <div class="col-md-7 d-flex">
-                <div class="img1 img-1 mr-md-2" id="about_img1" style="background-image: url(images/Ser1stPic.jpeg);"></div>
-                <div class="img1 img-2 ml-md-2" id="about_img2" style="background-image: url(images/Ser2ndPic.jpg);"></div>
-                <div class="img1 img-3 ml-md-2" id="about_img3" style="background-image: url(images/TiagoPic.jpeg);"></div>
+            <!-- <div class="d-inline"> -->
+                <div class="col-sm-4 p-1">
+                    <div class="img1 mx-auto d-block"></div>
+                </div>
+                <div class="col-sm-4 p-1">
+                    <div class="img2 mx-auto d-block"></div>
+
+                </div>
+                <div class="col-sm-4 p-1">
+                    <div class="img3 mx-auto d-block"></div>
+
+                </div>
             </div>
             <div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate">
                 <div class="heading-section mb-4 my-5 my-md-0">
@@ -51,23 +66,24 @@
 </section>
 
 
-<section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter">
-    <div class="container-about">
+<!-- <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter">
+    <div class="container">
         <div class="row d-md-flex">
             <div class="col-md-9">
                 <div class="row d-md-flex align-items-center">
                     <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
                         <div class="block-18">
                             <div class="text">
-                                <strong class="number" data-number="10000">0</strong>
+                                <strong class="number">1000</strong>
                                 <span class="p">Years of Experienced</span>
-                            </div>
+                            </strong>
                         </div>
                     </div>
+                </div>
                     <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
                         <div class="block-18">
                             <div class="text">
-                                <strong class="number" data-number="10000">0</strong>
+                                <strong class="number">5000</strong>
                                 <span class="p">Done Jobs</span>
                             </div>
                         </div>
@@ -75,7 +91,7 @@
                     <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
                         <div class="block-18">
                             <div class="text">
-                                <strong class="number" data-number="10000">0</strong>
+                                <strong class="number">300</strong>
                                 <span class="p">Staffs</span>
                             </div>
                         </div>
@@ -83,7 +99,7 @@
                     <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
                         <div class="block-18">
                             <div class="text">
-                                <strong class="number" data-number="10000">0</strong>
+                                <strong class="number">2653</strong>
                                 <span class="p">Happy Customers</span>
                             </div>
                         </div>
@@ -95,34 +111,16 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
+
+
+<!-- <script type="text/javascript">
+    $(".num").counterUp({delay: 10, time: 10000});
+</script> -->
 
 <!-- <script>
-    var counter = function() {
-		
-		$('#section-counter').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('ftco-animate') ) {
-
-				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
-				$('.number').each(function(){
-					var $this = $(this),
-						num = $this.data('number');
-						console.log(num);
-					$this.animateNumber(
-					  {
-					    number: num,
-					    numberStep: comma_separator_number_step
-					  }, 7000
-					);
-				});
-				
-			}
-
-		} , { offset: '95%' } );
-
-	}
-	counter();
+    $(".number").counterUp({delay: 10, time: 1000});
 </script> -->
 
 

@@ -1,14 +1,14 @@
-#about_page {
+/* #about_page {
     text-align: center;
     position: relative;
     margin: 90px;
     min-height: auto;
-    /* background-image: url(../images/bg_1.jpg); */
+    background-image: url(../images/bg_1.jpg);
     background-position: left left !important;
     background-repeat: no-repeat;
     background-size: cover;
   }
-/* Changes all paragraphs color */
+Changes all paragraphs color
   .p {
       color: rgba(0,0,0,.6); 
   }
@@ -56,7 +56,7 @@
     min-width: 200px !important; }
 
 .ftco-wrap-about {
-    background-position: bottom center !important; }
+    background-position: center center !important; }
     .ftco-wrap-about .heading-section h2 {
         font-weight: 600 !important; }
     .ftco-wrap-about .img {
@@ -66,7 +66,7 @@
     vertical-align: middle;
     border-style: none; 
     margin-left: 30px;
-    /* margin-bottom: 150px; */
+    margin-bottom: 150px;
     background-repeat: no-repeat;
     background-position: center center !important;
     background-size: cover;
@@ -74,8 +74,8 @@
     justify-content: center;
     align-content: center;
     min-height: 1vh;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: minmax(60px, auto) repeat(5, 50px);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: minmax(60px, auto) repeat(3, 100px);
 }
 
 section {
@@ -86,7 +86,7 @@ section {
 
 #tabs {
     margin-top: 70px;
-
+    
 }
 
 .number {
@@ -108,17 +108,18 @@ section {
 }
 
 #about_img1 {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 #about_img2 {
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #about_img3 {
-    /* margin-bottom: 30px; */
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 .phone {
@@ -135,3 +136,21 @@ section {
     font-size: large;
 }
 
+#section-counter {
+    display: grid;
+} */
+
+.img1{
+    background-image: "images/Ser1stPic.jpeg"; 
+    
+}
+
+.img2{
+    background-image: "images/Ser2ndPic.jpeg"; 
+    
+}
+
+.img3{
+    background-image: "images/TiagoPic.jpeg"; 
+    
+}
