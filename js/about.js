@@ -11,9 +11,7 @@ $(document).ready(function(){
 	var main = $("main");
 
 	$(".btn-accessibility").click(function() {
-		var urlHashTag = this.getAttribute("href");
-		var urlReal = urlHashTag.substring(1, urlHashTag.lenght) + ".html";
-		main.load(urlReal);
+		main.load("accessibility.html");
 	});
 	  
 	//   $(".number").counterUp({delay: 10, time: 1000});
