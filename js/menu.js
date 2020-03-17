@@ -11,16 +11,16 @@ $(document).ready(function(){
     // Title animation (when the page is loaded)
     setTimeout(function() {
         breakfastTitle.show("fade", 1000);
-    }, 500);
+    }, 300);
 
     setTimeout(function() {
         breakfastTitle.effect("pulsate", function(){
             breakfastTitle.addClass("heading-effect");
         });
-    }, 800);
+    }, 600);
 
     // Cards animation
-    setTimeout(unFoldCards, 2800);
+    setTimeout(unFoldCards, 2000);
     
     function unFoldCards() {
         cards.show("drop", {direction:'left'}, 1000);
@@ -41,14 +41,14 @@ $(document).ready(function(){
 
         setTimeout(function() {
             titleID.show("fade", 1000);
-        }, 500);
+        }, 300);
 
         setTimeout(function() {
             titleID.effect("pulsate", function() {
                 titleID.addClass("heading-effect");
             });
-        }, 800);
+        }, 600);
 
-        setTimeout(unFoldCards, 2800);
+        setTimeout(unFoldCards, 2000);
     });
 });
