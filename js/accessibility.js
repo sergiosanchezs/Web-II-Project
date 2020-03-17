@@ -1,7 +1,9 @@
 $(document).ready(function(){
     
+    $( "#dialog-terms" ).hide();
+
     // Activate the tooltip widget for each input box
-    $("[title]").tooltip({
+    $(".tooltip-control").tooltip({
         position: {
             my: "left top",
             at: "left bottom+2",
@@ -12,9 +14,17 @@ $(document).ready(function(){
         }
     });
 
+    $(".date-tooltip-control").tooltip({
+        position: {
+            my: "left top",
+            at: "right+50 top-10",
+            collision: "none"
+        }
+    });
+
     // Prevents the tooltip action when the submit button is pressed
     $(".btn-submit").click(function(){
-        $( "[title]" ).tooltip( "option", { disabled: true } );
+        $( "[title]" ).tooltip("disable");
     });
 
     // Datepicker widget for the user visualize better the date.
@@ -31,7 +41,7 @@ $(document).ready(function(){
     // Format the date
     $("#inputDate").datepicker("option", "dateFormat", "d MM, y")
 
-    // Plugin used for form validation
+    // Validation plugin used for form validation
     $("#disabilitySubmitForm").validate({
         rules: {
             inputFirstName: {
@@ -66,4 +76,16 @@ $(document).ready(function(){
             }
         }
     });
+
+    // Terms and Conditions dialog
+
+    $( ".terms-and-conditions" ).on( "click", function() {
+        $( "#dialog-terms" ).dialog({
+            position: { my: "center", at: "center top" },
+            height: 800,
+            width: 600,
+            modal: true
+          });
+        // alert("here");
+      });
 });
