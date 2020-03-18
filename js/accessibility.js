@@ -81,11 +81,10 @@ $(document).ready(function(){
 
     $( ".terms-and-conditions" ).on( "click", function() {
         $( "#dialog-terms" ).dialog({
-            position: { my: "center", at: "center top" },
+            position: { my: "center", at: "center top-10" },
             height: 800,
             width: 600,
             modal: true
           });
-        // alert("here");
       });
 });
