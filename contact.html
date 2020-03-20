@@ -1,32 +1,81 @@
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.validate.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
 <link rel="stylesheet" href="css/contact.css">
-<script src="js/contact.js"></script>
 
 
 
 <div class="bg-img">
-  <form action="join.html" class="container p-3">
-    <span class="tangerine_font slogan_contact">Contact</span>
-    <h2>Get in touch</h2>
-    <div class="grid">
-    <label for="email"><b>First Name</b></label>
-    <input type="text" placeholder="Enter Fisrt Name" name="email" required>
+    <form class="contact-form" id="contact-form">
+            
+        <span class="contact-logo tangerine_font">Contact</span>
+        <div class="subtext">Get in Touch</div>
+        <div class="form-content my-4">
 
-    <label for="psw"><b>Last Name</b></label>
-    <input type="password" placeholder="Enter Last Name" name="psw" required>
-
-    <label for="psw"><b>Email</b></label>
-    <input type="password" placeholder="Enter Email" name="psw" required>
-
-    <label for="psw"><b>Phone</b></label>
-    <input type="password" placeholder="Enter Phone" name="psw" required>
-    </div>
-
-    <button type="submit" class="btn-contact" >Send</button>
-  </form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name</label>
+                <input type="text" class="form-control tooltip-control" id="inputFirstName" name="inputFirstName" placeholder="First Name" title="Please, enter your first name.">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" class="form-control tooltip-control" id="inputLastName" name="inputLastName" placeholder="Last Name" title="Please, enter your last name.">
+              </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="inputArea">Area</label>
+                <select id="inputArea" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>+1 - Canada</option>
+                    <option>+55 - Brazil</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPhone">Phone</label>
+                <input type="number" class="form-control tooltip-control" id="inputPhone" name="inputPhone" placeholder="1234567891" title="Please, enter your phone.">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control tooltip-control" id="inputEmail" name="inputEmail" placeholder="example@email.com" title="Please, enter your email.">
+              </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea class="form-control tooltip-control" id="inputMessage" name="formTextarea" rows="4" placeholder="Write your message here" title="Please, enter your message."></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label checkboxLabel1" for="gridCheck1">
+                  I would like to receive news and promotions from Tiaser Square Restaurant by email.
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="termsAndConditionsCheckbox">
+                  <label class="form-check-label checkboxLabel2" for="termsAndConditionsCheckbox">
+                    By checking, you confirm that you agree with the Tiaser Square <a class="terms-and-conditions" href="#">Terms and Conditions</a>.
+                  </label>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-send-message">Send</button>
+        </div>
+    </form>
 </div>
+
+<div id="dialog-terms" title="Terms and Conditions">
+    <p>The Tiaser® Square Terms and Conditions consists of ...</p>
+</div>
+
+<footer>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    
+    <script src="js/contact.js"></script>
+</footer>
