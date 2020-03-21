@@ -20,6 +20,9 @@ $(document).ready(function(){
         var form = $("#contact-form");
         if (form.valid()) {
             alert("Message sent!");
+            $("#inputFirstName").removeClass("errorClass");
+            $("#inputEmail").removeClass("errorClass");
+            $("#inputMessage").removeClass("errorClass");
         }
         else {
             $("#inputFirstName").addClass("errorClass");
@@ -62,8 +65,7 @@ $(document).ready(function(){
             termsAndConditionsCheckbox: {
                 required: "Term and Conditions is required."
             }
-        }
-
+        },
     });
 
     $( ".terms-and-conditions" ).on( "click", function() {
