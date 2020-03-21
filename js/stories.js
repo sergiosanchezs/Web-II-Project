@@ -1,13 +1,15 @@
 $(document).ready(function(){
     
     // Start the JQuery carousel plugin
-    $(".jcarousel").jcarousel();
+    $(".jcarousel").jcarousel({
+        wrap: 'circular'
+    });
 
     // Auto Scroll
     $(".jcarousel").jcarouselAutoscroll({
-            interval: 4000
-        });
-    
+        interval: 4000
+    });
+
     // On mouse hover Stop Auto Scroll
     // $('.jcarousel').jcarouselAutoscroll({
     //     autostart: false
@@ -20,18 +22,5 @@ $(document).ready(function(){
 
     $(".jcarousel-control-next").jcarouselControl({
         target: '+=1'
-    });
-
-    $(".jcarousel-pagination").jcarouselPagination({
-        item: function(page) {
-            return '<a href="#' + page + '">' + page + '</a>';
-        }
-    });
-
-    $('.jcarousel').on('jcarousel:scrollend', function(event, carousel) {
-        carousel.jcarouselAutoscroll({
-            interval: 4000,
-            target: '-=3'
-        });
     });
 });
