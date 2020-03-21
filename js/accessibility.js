@@ -1,9 +1,10 @@
 $(document).ready(function(){
     
-    $( "#dialog-terms" ).hide();
-    $("#dialog-test").hide();
+    // Hide the two dialog elements
+    $("#dialog-terms").hide();
+    $("#confirmation-dialog").hide();
 
-    // Activate the tooltip widget for each input box
+    // Activate the tooltip widget for each input box (exept date)
     $(".tooltip-control").tooltip({
         position: {
             my: "left top",
@@ -15,7 +16,9 @@ $(document).ready(function(){
         }
     });
 
+    // Customized tooltip position for the date input box
     $(".date-tooltip-control").tooltip({
+        // JQuery UI Utility** (position)
         position: {
             my: "left top",
             at: "right+50 top-10",
@@ -23,19 +26,33 @@ $(document).ready(function(){
         }
     });
 
-
     $(".btn-submit").click(function(){
 
         // Checks if the form is valid when submited
         var form = $("#disabilitySubmitForm");
+        var inputEmail = $("#inputEmail");
+        var emailDialog = $("#emailDialog");
+
         if (form.valid()) {
-            alert("valid!");
+            $("#confirmation-dialog").dialog({
+                modal: true,
+                height: 280,
+                width: 500,
+                buttons: {
+                    "OK": function() {
+                        $(this).dialog("close");
+                    }
+                },
+                open: function(){
+                    emailDialog.text(inputEmail.val());
+                    emailDialog.addClass("text-lowercase");
+                }
+              });
         }
 
         // Prevents the tooltip action when the submit button is pressed
-        $( "[title]" ).tooltip("disable");
+        $("[title]").tooltip("option", "hide");
 
-        return false;
     });
 
     // Datepicker widget for the user visualize better the date.
@@ -50,7 +67,7 @@ $(document).ready(function(){
     });
 
     // Format the date
-    $("#inputDate").datepicker("option", "dateFormat", "d MM, y")
+    $("#inputDate").datepicker("option", "dateFormat", "yy-mm-dd")
 
     // Validation plugin used for form validation
     $("#disabilitySubmitForm").validate({
@@ -62,9 +79,6 @@ $(document).ready(function(){
             inputEmail: {
                 required: true,
                 email: true
-            },
-            inputDate: {
-                date: true
             },
             inputDescription: {
                 required: true
@@ -80,10 +94,7 @@ $(document).ready(function(){
             },
             inputEmail: {
                 required: "Please enter your email address.",
-                email: "Please enter a valid email address",
-            },
-            inputDate: {
-                date: "Date required"
+                email: "Please enter a valid email address"
             },
             inputDescription: {
                 required: "Please, you must provide a description."
@@ -95,10 +106,9 @@ $(document).ready(function(){
     });
 
     // Terms and Conditions dialog
-    $( ".terms-and-conditions" ).on( "click", function() {
-        $( "#dialog-terms" ).dialog({
-            position: { my: "center", at: "center top-5" },
-            height: 800,
+    $(".terms-and-conditions").click(function() {
+        $("#dialog-terms").dialog({
+            height: 1000,
             width: 600,
             modal: true
           });

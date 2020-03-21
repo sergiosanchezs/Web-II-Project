@@ -44,3 +44,19 @@
     display: block;
     color: rgb(168, 1, 1);
 }
+
+/* Confirmation dialog */
+
+#confirmation-dialog p{
+    display: inline;
+    font-size: 1.2rem;
+}
+
+.modal-bold{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.modal-div{
+    margin-top: 10px;
+}

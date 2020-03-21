@@ -1,12 +1,24 @@
 $(document).ready(function(){
 
-    $( "#tabs" ).tabs();
+    var tabs = $("#tabs").tabs();
+
+    // JQuery UI Interactions** (sortable)
+    tabs.find(".ui-tabs-nav").sortable({
+        axis: "x",
+        stop: function() {
+          tabs.tabs("refresh");
+        }
+    });
 
     var breakfastTitle = $("#breakfast-heading");
     var cards = $(".pricing-card");
 
-    cards.hide();
+    // Hide both the heading and the cards array
     breakfastTitle.hide();
+    cards.hide();
+    
+
+    
 
     // Title animation (when the page is loaded)
     setTimeout(function() {
@@ -19,18 +31,18 @@ $(document).ready(function(){
         });
     }, 600);
 
-    // Cards animation
+    // Cards animation (after the title animation is complete)
     setTimeout(unFoldCards, 2000);
     
     function unFoldCards() {
         cards.show("drop", {direction:'left'}, 1000);
     }
 
-    // Activates when any ancor tag is clicked
+    // Activates the animation when any ancor tag is clicked
     $(".menu-nav").click(function() {
         
-        var sectionRawID = this.getAttribute("href");
-        var titleID = $(sectionRawID + "-heading");
+        var sectionID = this.getAttribute("href");
+        var titleID = $(sectionID + "-heading");
 
         cards.hide();
         titleID.hide();
