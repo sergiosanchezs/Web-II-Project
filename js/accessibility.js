@@ -43,6 +43,7 @@ $(document).ready(function(){
                 },
                 open: function(){
                     emailDialog.text(inputEmail.val());
+                    emailDialog.addClass("text-lowercase");
                 }
               });
         }
@@ -64,7 +65,7 @@ $(document).ready(function(){
     });
 
     // Format the date
-    $("#inputDate").datepicker("option", "dateFormat", "d MM, y")
+    $("#inputDate").datepicker("option", "dateFormat", "yy-mm-dd")
 
     // Validation plugin used for form validation
     $("#disabilitySubmitForm").validate({
