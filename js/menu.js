@@ -5,8 +5,11 @@ $(document).ready(function(){
     var breakfastTitle = $("#breakfast-heading");
     var cards = $(".pricing-card");
 
-    cards.hide();
     breakfastTitle.hide();
+    cards.hide();
+    
+
+    
 
     // Title animation (when the page is loaded)
     setTimeout(function() {
