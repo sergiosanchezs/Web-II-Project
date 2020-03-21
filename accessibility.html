@@ -35,7 +35,7 @@
             <div class="form-group row">
                 <label for="inputDate" class="col-sm-1 col-form-label">Date</label>
                 <div class="col-sm-2 date-div">
-                    <input type="text" class="form-control date-tooltip-control" id="inputDate" name="inputDate" title="Please, select the date of your preference.">
+                    <input type="text" class="form-control date-tooltip-control" id="inputDate" name="inputDate" placeholder="mm/dd/yy" title="Please, select the date of your preference.">
                 </div>
             </div>
 
@@ -43,13 +43,13 @@
             <div class="form-group row">
                 <label for="description" class="col-form-label col-sm-1">Description</label>
                 <div class="col-sm-11">
-                    <textarea class="form-control tooltip-control" id="inputDescription" name="inputDescription" rows="5" title="In this box you should give a brief description about how the environment should be to receive you better."></textarea>
+                    <textarea class="form-control tooltip-control" id="inputDescription" name="inputDescription" rows="5" placeholder="Description" title="In this box you should give a brief description about how the environment should be to receive you better."></textarea>
                 </div>
             </div>
 
             <div class="form-group row">
                 <label for="confirmDisability" class="form-check-label col-sm-10">
-                    By checking, you confirm your disability and accept the Tiaser Square <a class="terms-and-conditions" href="#">Terms and Conditions</a>.
+                    By checking, you confirm your disability and accept the Tiaser Square <a class="terms-and-conditions" href="#"><em>Terms and Conditions</em></a>.
                 </label>
                 <div class="col-sm-2">
                     <input class="form-check-input" type="checkbox" id="confirmDisability" name="confirmDisability">
@@ -71,7 +71,7 @@
 
             <div class="form-group row accessibility-submit-btn">
                 <div class="col-sm-12">
-                    <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+                    <button type="button" class="btn btn-primary btn-submit">Submit</button>
                 </div>
             </div>
         </form>
@@ -84,8 +84,14 @@
 </div>
 
 <!-- This dialog will apper when the user clicks on Submit -->
-<div id="dialog-test" title="Confirmation">
-    <p>Confirmation...</p>
+<div id="confirmation-dialog" title="Reservation details">
+
+    <div class="modal-div">
+        <p>Your submition has been successfully complete. In the next hours, you will receive an email at </p>
+        <p id="emailDialog" class="modal-bold">[inputEmail]</p>
+        <p> with all the reservation details.</p>
+    </div>
+
 </div>
 
 <footer>

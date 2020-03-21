@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
-    $( "#dialog-terms" ).hide();
-    $("#dialog-test").hide();
+    $("#dialog-terms").hide();
+    $("#confirmation-dialog").hide();
 
     // Activate the tooltip widget for each input box
     $(".tooltip-control").tooltip({
@@ -28,14 +28,28 @@ $(document).ready(function(){
 
         // Checks if the form is valid when submited
         var form = $("#disabilitySubmitForm");
+        var inputEmail = $("#inputEmail");
+        var emailDialog = $("#emailDialog");
+
         if (form.valid()) {
-            alert("valid!");
+            $("#confirmation-dialog").dialog({
+                modal: true,
+                height: 280,
+                width: 500,
+                buttons: {
+                    "OK": function() {
+                        $(this).dialog("close");
+                    }
+                },
+                open: function(){
+                    emailDialog.text(inputEmail.val());
+                }
+              });
         }
 
         // Prevents the tooltip action when the submit button is pressed
-        $( "[title]" ).tooltip("disable");
+        $("[title]").tooltip( "option", "hide" );
 
-        return false;
     });
 
     // Datepicker widget for the user visualize better the date.
@@ -63,9 +77,6 @@ $(document).ready(function(){
                 required: true,
                 email: true
             },
-            inputDate: {
-                date: true
-            },
             inputDescription: {
                 required: true
             },
@@ -80,10 +91,7 @@ $(document).ready(function(){
             },
             inputEmail: {
                 required: "Please enter your email address.",
-                email: "Please enter a valid email address",
-            },
-            inputDate: {
-                date: "Date required"
+                email: "Please enter a valid email address"
             },
             inputDescription: {
                 required: "Please, you must provide a description."
@@ -95,10 +103,9 @@ $(document).ready(function(){
     });
 
     // Terms and Conditions dialog
-    $( ".terms-and-conditions" ).on( "click", function() {
-        $( "#dialog-terms" ).dialog({
-            position: { my: "center", at: "center top-5" },
-            height: 800,
+    $(".terms-and-conditions").click(function() {
+        $("#dialog-terms").dialog({
+            height: 1000,
             width: 600,
             modal: true
           });
