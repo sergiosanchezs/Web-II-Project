@@ -21,9 +21,11 @@ $(document).ready(function(){
         if (form.valid()) {
             alert("Message sent!");
         }
-
-        // Prevents the tooltip action when the send button is pressed
-        // $( "[title]" ).tooltip("disable");
+        else {
+            $("#inputFirstName").addClass("errorClass");
+            $("#inputEmail").addClass("errorClass");
+            $("#inputMessage").addClass("errorClass");
+        }
 
         return false;
     });
@@ -55,19 +57,20 @@ $(document).ready(function(){
                 email: "Please, enter a valid email address",
             },
             inputMessage: {
-                required: "Please, enter your message."
+                required: "Message is required."
             },
             termsAndConditionsCheckbox: {
                 required: "Term and Conditions is required."
             }
         }
+
     });
 
     $( ".terms-and-conditions" ).on( "click", function() {
         $( "#dialog-terms" ).dialog({
             position: { my: "center", at: "center top-5" },
-            height: 800,
-            width: 600,
+            height: 600,
+            width: 500,
             modal: true
           });
       });

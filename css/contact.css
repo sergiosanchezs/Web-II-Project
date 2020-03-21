@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    min-height: 800px;
+    min-height: 820px;
   }
 
   .contact-form {
@@ -18,7 +18,7 @@
     margin: 60px;
     margin-left: 10rem;
     max-width: 40%;
-    max-height: 89%;
+    max-height: 90%;
     padding: 16px;
     background-color: white;
   }
@@ -48,4 +48,11 @@
       text-align: left;
   }
   
+  form .error {
+    color: #ff0000;
+  }
+
+  .errorClass {
+    border-color: #ff0000;
+  }
   
