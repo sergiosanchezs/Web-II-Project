@@ -1,9 +1,10 @@
 $(document).ready(function(){
     
+    // Hide the two dialog elements
     $("#dialog-terms").hide();
     $("#confirmation-dialog").hide();
 
-    // Activate the tooltip widget for each input box
+    // Activate the tooltip widget for each input box (exept date)
     $(".tooltip-control").tooltip({
         position: {
             my: "left top",
@@ -15,14 +16,15 @@ $(document).ready(function(){
         }
     });
 
+    // Customized tooltip position for the date input box
     $(".date-tooltip-control").tooltip({
+        // JQuery UI Utility** (position)
         position: {
             my: "left top",
             at: "right+50 top-10",
             collision: "none"
         }
     });
-
 
     $(".btn-submit").click(function(){
 
@@ -49,7 +51,7 @@ $(document).ready(function(){
         }
 
         // Prevents the tooltip action when the submit button is pressed
-        $("[title]").tooltip( "option", "hide" );
+        $("[title]").tooltip("option", "hide");
 
     });
 
