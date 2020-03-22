@@ -5,11 +5,11 @@
 
 .bg-img {
     background-image: url(../images/bg_1.jpg);
-    background-position: center;
+    background-position: center center !important;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    min-height: 820px;
+    min-height: 840px;
   }
 
   .contact-form {

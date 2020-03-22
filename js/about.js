@@ -24,6 +24,14 @@ $(document).ready(function(){
 		main.load("accessibility.html");
 	});
 
+	$(".btn-FAQ").click(function() {
+		main.load("FAQ.html");
+	});
+
+	$(".btn-deals").click(function() {
+		main.load("deals.html");
+	});
+
 	$(".number").counterUp({delay: 10, time: 2000});
 
 });
