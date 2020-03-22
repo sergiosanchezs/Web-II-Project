@@ -13,10 +13,7 @@ $(document).ready(function(){
         heightStyle: "content",
         active: 'none',
         activate: function( event, ui ) {
-            // console.log(event);
-            // console.log(ui);
             if (ui.newHeader.length > 0){
-                // console.log(ui.newHeader[0].title);
                 var titleNewHeader = ui.newHeader[0].title
                 if (titleNewHeader === "MapLocation"){
                     setTimeout(unFoldMap, 250);
