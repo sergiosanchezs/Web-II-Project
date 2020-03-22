@@ -93,6 +93,15 @@ h2 {
 /********************************************************/  
 /* Start Footer */
 
+.footer-top-content{
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.footer-top-content .btn{
+    padding: 8px 15px;
+}
+
 .main_footer{
     background-color: #c9d6df;
 }

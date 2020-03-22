@@ -42,6 +42,7 @@
 .tiaser-card {
   background-color: transparent !important;
   color: #c9d6df;
+  border: none;
 }
 
 #title {
