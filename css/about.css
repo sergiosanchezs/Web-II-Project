@@ -32,32 +32,32 @@ strong {
     color: #2B94D1 !important;    
   }
 
-  h2 {
-    position: relative;
-    margin-top: auto;
-    padding: 1.5%;
-    z-index: 0;
+h2 {
+position: relative;
+margin-top: auto;
+padding: 1.5%;
+z-index: 0;
 }
 
-  .slogan_about {
-    line-height: -2.6rem;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    right: 0;
-    font-weight: normal;
-    font-size: 100px;
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
-    z-index: 1;
-  }
+.slogan_about {
+line-height: -2.6rem;
+position: absolute;
+top: 45px;
+left: 0;
+right: 0;
+font-weight: normal;
+font-size: 100px;
+display: block;
+margin-top: 0;
+margin-bottom: 0;
+z-index: 1;
+}
 
-  .phone {
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 1rem;
-    color: #2B94D1 !important;
+.phone {
+font-size: 30px;
+font-weight: 700;
+margin-top: 1rem;
+color: #2B94D1 !important;
 }
 
 p, span {
