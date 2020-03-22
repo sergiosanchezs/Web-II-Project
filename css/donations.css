@@ -1,0 +1,33 @@
+.bg-img {
+    background-image: url(../images/bg_1.jpg);
+    background-image: url(../images/bg_1.jpg);
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: auto;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .7);
+    height: auto;
+}
+
+.line {
+    border-bottom: 1px solid;
+    border-color: white;
+}
+
+.line2 {
+    border-bottom: 1px solid;
+    border-color: black;
+}
+
+.phrase {
+    font-weight: 500;
+}
+
+.top-text {
+    font-size: 30px;
+    font-weight: 300;
+}
