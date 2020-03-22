@@ -3,13 +3,38 @@ $(document).ready(function(){
         header: "ui-icon-circle-arrow-e",
         activeHeader: "ui-icon-circle-arrow-s"
     };
+    
+    var map = $("#book-map")
+    map.hide();
 
     $("#bookAccordion").accordion({
         collapsible: true,
         icons: icons,
         heightStyle: "content",
-        active: 'none'
+        active: 'none',
+        activate: function( event, ui ) {
+            // console.log(event);
+            // console.log(ui);
+            if (ui.newHeader.length > 0){
+                // console.log(ui.newHeader[0].title);
+                var titleNewHeader = ui.newHeader[0].title
+                if (titleNewHeader === "MapLocation"){
+                    setTimeout(unFoldMap, 250);
+                }
+                else if (titleNewHeader === "bookTable") {
+                    map.hide();
+                }
+            } else {
+                map.hide();
+            }
+        }
     });
+
+    // setTimeout(unFoldMap, 2000);
+    
+    function unFoldMap() {
+        map.show( "drop", { direction:'left' } , 1000 );
+    }
 
     $("#inputFullName").tooltip({
         hide: { effect: "explode", duration: 1000 }
