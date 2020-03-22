@@ -24,8 +24,8 @@ $(document).ready(function(){
 		main.load("accessibility.html");
 	});
 
-	$(".btn-FAQ").click(function() {
-		main.load("FAQ.html");
+	$(".btn-donations").click(function() {
+		main.load("donations.html");
 	});
 
 	$(".btn-deals").click(function() {
