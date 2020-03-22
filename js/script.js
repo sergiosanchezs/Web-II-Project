@@ -24,6 +24,15 @@ $(document).ready(function(){
         });
     });
 
+	$(".faq-button").click(function() {
+		main.load("faq.html");
+    });
+
+    $(".bookATable-button").click(function() {
+		main.load("bookatable.html");
+    });
+    
+
     $("#emailSubsForm").validate({
         rules: {
             nameInput: {
