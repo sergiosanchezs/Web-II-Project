@@ -1,4 +1,79 @@
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.min.css">
+<link rel="stylesheet" href="css/bookatable.css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script src="js/bookatable.js"></script>
-<div>
-    <p>Hello this is book a table</p>
+
+<div class="book-bg-img">
+
+    <div class="col-lg-9 col-md-10 mx-auto" id="bookAccordion">
+        <h3>Book A Table Form</h3>
+        <div class="col-12 mx-auto">
+            <form class="book-form" id="bookATable-form">
+                    
+                <span class="book-logo tangerine_font">Book A Table</span>
+                <div class="book-subtext">Make A Reservation</div>
+        
+                <div class="form-content">
+        
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputFullName">Full Name</label>
+                        <input type="text" class="form-control tooltip-control" id="inputFullName" name="inputFullName" placeholder="Full Name" title="Please, enter your full name." />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="text" class="form-control tooltip-control" id="inputEmail" name="inputEmail" placeholder="example@email.com" title="Please, enter your email." />
+                      </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone">Phone</label>
+                            <input type="text" class="form-control tooltip-control" id="inputPhone" name="inputPhone" placeholder="+1-(234)-256-1234" title="Please, enter your phone." />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputDate">Date</label>
+                            <input type="text" class="form-control tooltip-control" id="inputDate" name="inputDate" placeholder="YYYY-MM-DD" title="Please, enter the reservation Date." />
+                        </div>
+                    </div>
+        
+                    <div class="form-row">
+                        <div class="form-group  col-md-6">
+                            <label for="inputTime">Time</label>
+                            <input class="form-control tooltip-control" id="inputTime" name="inputTime" rows="4" placeholder="06:30 PM" title="Please, select the reservation Time." />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPeople">Number of People</label>
+                            <select class="form-control" id="inputPeople" name="inputPeople" title="Please, select how many people">
+                                <option value="">Choose...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7+</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <button type="submit" class="btn btn-outline-info mt-4">Make A Reservation</button>
+
+                </div>
+            </form>
+        </div>
+        <h3>Map Location</h3>
+        <div>
+            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet</p>
+        </div>
+    </div>
+
 </div>
