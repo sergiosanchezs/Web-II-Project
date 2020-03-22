@@ -1,7 +1,5 @@
 $(document).ready(function(){
     
-
-    
     // Remove the placeholder when the input box is selected
     $(".FAQsInput").focus(function () {
         $(this).attr("rel", $(this).attr("placeholder"));
@@ -26,7 +24,6 @@ $(document).ready(function(){
         source: availableTagsArray
     });
 
-    
     // Acordion
 
     $("#accordion, #accordion2").accordion({
@@ -34,8 +31,6 @@ $(document).ready(function(){
         active: 'none'
     });
 
-    	
-    
     // Load the book a table page
 
     $("#bookATable").click(function() {
