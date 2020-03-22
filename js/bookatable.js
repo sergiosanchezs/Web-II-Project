@@ -7,7 +7,8 @@ $(document).ready(function(){
     $("#bookAccordion").accordion({
         collapsible: true,
         icons: icons,
-        heightStyle: "content"
+        heightStyle: "content",
+        active: 'none'
     });
 
     $("#inputFullName").tooltip({
@@ -37,7 +38,7 @@ $(document).ready(function(){
     
     $( "#inputDate" ).datepicker({
         dateFormat: "yy-mm-dd"
-    }); 
+    });
     
     $( "#inputPeople" ).tooltip({
         hide: { effect: "explode", duration: 1000 }
