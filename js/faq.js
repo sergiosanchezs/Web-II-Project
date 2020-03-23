@@ -75,6 +75,12 @@ $(document).ready(function(){
         $("#exampleModal").modal('show');
     });
 
+    // clear the input box when the modal button is clicked
+    $(".modal-btn").click(function(){
+        $(".FAQsInput").val("");
+        $(".FAQsInput").focus();
+    });
+
     // Set the accordion widget
     $("#accordion, #accordion2").accordion({
         collapsible: true,
@@ -90,32 +96,5 @@ $(document).ready(function(){
     $(".contact-button").click(function() {
 		$("main").load("contact.html");
     });
-
-    var arr = []
-
-    for(var i =0; i<2; i++){
-        arr.push([]);
-    }
-
-    for(var i=0; i<2; i++){
-        for(var j=0; j<2; j++){
-            if(j==0){
-                arr[i].push("question"+ (i+j+1))
-            } else{
-                arr[i].push("answer"+ (i+j))
-            }
-            
-        }
-    }
-
-    // for(var i=0; i<10; i++){
-    //     console.log("Question"+ (i+1) + " = " + questionAndAnswerArray[i+1])
-    // }
-    // console.log("Question 1 = " + arr[0][0])
-    // console.log("Answer 1 = " + arr[0][1])
-
-    // console.log("Question 2 = " + arr[1][0])
-    // console.log("Answer 2 = " + arr[1][1])
-
 
 });
