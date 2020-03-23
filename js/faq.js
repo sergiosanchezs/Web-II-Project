@@ -10,27 +10,66 @@ $(document).ready(function(){
         $(this).removeAttr("rel");
     });
 
-    // Get all the innerText in the h3 tags inside the accordions
-    var availableTags = $("#accordion h3, #accordion2 h3");
-    var availableTagsArray = []
+    // Get all the innerText in the h3 tags inside the accordions (Questions)
+    var availableQuestions = $("#accordion h3, #accordion2 h3");
+    var availableQuestionsArray = []; // Array of Questions
 
-    for (var i = 0; i < availableTags.length; i++){
-        // Append each h3 text to the array
-        var eachQuestion = availableTags[i].innerText;
+    // Append each question to the availableQuestionsArray array
+    for(var i = 0; i < availableQuestions.length; i++){
+        var eachQuestion = availableQuestions[i].innerText;
 
-        availableTagsArray.push(eachQuestion);
+        availableQuestionsArray.push(eachQuestion);
+    }
+
+
+    var availableAnswers = $("#accordion p, #accordion2 p");
+    // template '[[question1, answer1], [question2, answer2], [question3, answer3]]'
+    var questionAndAnswerArray = [] // 2D array of questions and answers
+
+    // Create the questionAndAnswerArray 2D array by pushing arrays inside
+    for(var i = 0; i < availableQuestions.length; i++){
+        questionAndAnswerArray.push([]);
+    }
+
+    for(var i=0; i<availableQuestions.length; i++){
+
+        //Return each Question and Answer text
+        var eachQuestion = availableQuestions[i].innerText;
+        var eachAnswer = availableAnswers[i].innerText;
+
+        for(var j=0; j<2; j++){
+            // if 0, append a question. else, append an answer
+            if(j==0){
+                questionAndAnswerArray[i].push(eachQuestion)
+            } else{
+                questionAndAnswerArray[i].push(eachAnswer)
+            }
+            
+        }
     }
 
     // Set the autocomplete widget
     $(".FAQsInput").autocomplete({
-        source: availableTagsArray
+        source: availableQuestionsArray
     });
 
     // Get the user clicked question
     $("ul").click(function(){
         // Pass the question to the modal
-        var question = $(".FAQsInput").val();
-        $(".userClickedQuestion").text(question);
+        var userQuestion = $(".FAQsInput").val();
+        $(".userClickedQuestion").text(userQuestion);
+
+        for(var i = 0; i < questionAndAnswerArray.length; i++){
+            // Loop through the array and get each question
+            var arrayQuestions = questionAndAnswerArray[i][0];
+            var arrayAnswer = questionAndAnswerArray[i][1];
+
+            //Compare the user choosen question to the arrayQuestions
+            if(userQuestion == arrayQuestions){
+                // If matches, change the 'p' inner text to the answer
+                $(".userClickedAnswer").text(arrayAnswer);
+            }
+        }
 
         // Show Bootstrap modal
         $("#exampleModal").modal('show');
@@ -51,5 +90,32 @@ $(document).ready(function(){
     $(".contact-button").click(function() {
 		$("main").load("contact.html");
     });
+
+    var arr = []
+
+    for(var i =0; i<2; i++){
+        arr.push([]);
+    }
+
+    for(var i=0; i<2; i++){
+        for(var j=0; j<2; j++){
+            if(j==0){
+                arr[i].push("question"+ (i+j+1))
+            } else{
+                arr[i].push("answer"+ (i+j))
+            }
+            
+        }
+    }
+
+    // for(var i=0; i<10; i++){
+    //     console.log("Question"+ (i+1) + " = " + questionAndAnswerArray[i+1])
+    // }
+    // console.log("Question 1 = " + arr[0][0])
+    // console.log("Answer 1 = " + arr[0][1])
+
+    // console.log("Question 2 = " + arr[1][0])
+    // console.log("Answer 2 = " + arr[1][1])
+
 
 });
