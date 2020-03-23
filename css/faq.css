@@ -4,10 +4,37 @@ h2{
     color: #2B94D1 !important;
 }
 
-/* Wrapped Div */
+/* Wrapped main Div */
 .wrapped{
     padding: 10px;
+    margin: 10px 50px;
 }
+
+/* Accordions Wrap */
+.accordion-wrapped{
+    margin: 20px;
+}
+
 #searchForm{
     margin: 20px auto;
+}
+
+#accordion h3,#accordion2 h3{
+    margin: 5px;
+}
+#accordion div,#accordion2 div{
+    margin: 5px;
+}
+
+/* Bootstrap Dialog */
+.modal-body{
+    padding: 0.7rem;
+    text-align: left;
+}
+.modal-close-span{
+    font-size: 1.7rem;
+}
+.modal-footer{
+    display: initial;
+    text-align: center;
 }

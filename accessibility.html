@@ -1,62 +1,93 @@
+<!-- Calendar Plugin CSS -->
+<link rel="stylesheet" href="css/calendar-style.css">
+<!-- Page's CSS -->
 <link rel="stylesheet" href="css/accessibility.css">
 
-
+<!-- Header -->
 <div class="container-fluid my-5">
     <h2 class="accessibility-heading">Accessibility</h2>
 
     <p class="accessibility-text">Our restaurants are also prepared to receive customers with special needs. If you have any disability that requires a special environment;
         please, fill the form bellow for us to prepare a better experience for your next visit.</p>
 </div>
+
 <div class="accessibility-form container-fluid my-4 mx-auto">
     <div class="mx-5">
         <form id="disabilitySubmitForm">
+
+            <!-- First Name Input -->
             <div class="form-group row">
                 <label for="inputFirstName" class="col-sm-1 col-form-label">First Name</label>
                 <div class="col-sm-5">
-                    <input type="text" class="form-control tooltip-control" id="inputFirstName" name="inputFirstName" placeholder="First Name" title="Please, provide your first name.">
+                    <input type="text" class="form-control tooltip-control input-form" id="inputFirstName" name="inputFirstName" placeholder="e.g. Will" title="Please, provide your first name.">
                 </div>
+
+                <!-- Last Name Input -->
                 <label for="inputLastName" class="col-sm-1 col-form-label">Last Name</label>
                 <div class="col-sm-5">
-                    <input type="text" class="form-control tooltip-control" id="inputLastName" name="inputLastName" placeholder="Last Name" title="Please, provide your last name.">
+                    <input type="text" class="form-control tooltip-control input-form" id="inputLastName" name="inputLastName" placeholder="e.g. Smith" title="Please, provide your last name.">
                 </div>
             </div>
+
+            <!-- Email Input -->
             <div class="form-group row">
                 <label for="inputEmail" class="col-sm-1 col-form-label">Email</label>
                 <div class="col-sm-5">
-                    <input type="email" class="form-control tooltip-control" id="inputEmail" name="inputEmail" placeholder="Email" title="Please, provide your email.">
+                    <input type="email" class="form-control tooltip-control input-form" id="inputEmail" name="inputEmail" placeholder="e.g. jhon@gmail.com" title="Please, provide your email.">
                 </div>
 
+                <!-- Phone Input -->
                 <label for="inputPhone" class="col-sm-1 col-form-label">Phone</label>
                 <div class="col-sm-5">
-                    <input type="text" class="form-control tooltip-control" id="inputPhone" name="inputPhone" placeholder="Phone" title="Please, provide your phone number.">
+                    <input type="text" class="form-control tooltip-control input-form" id="inputPhone" name="inputPhone" placeholder="e.g. (123) 456-7890" title="Please, provide your phone number.">
                 </div>
             </div>
 
+            <!-- Date Input -->
             <div class="form-group row">
                 <label for="inputDate" class="col-sm-1 col-form-label">Date</label>
-                <div class="col-sm-2 date-div">
-                    <input type="text" class="form-control date-tooltip-control" id="inputDate" name="inputDate" placeholder="yy-mm-dd" title="Please, select the date of your preference.">
+                <div class="col-sm-2">
+                    <input type="text" class="form-control date-tooltip-control" id="inputDate" name="inputDate" placeholder="e.g. May 8, 2020" title="Please, select the date of your preference.">
+                </div>
+            </div
+            >
+            <!-- Calendar Plugin -->
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="calendar">
+                    <div class="calendar-footer">
+                    <div class="next-prev">
+                        <div class="btn1 prev-btn1">prev</div>
+                        <div class="btn1 next-btn1">next</div>
+                    </div>
+                    <div class="options">
+                        <div class="btn1 jump-today">Today</div>
+                        <div class="btn1 cancel-btn1">Cancel</div>
+                        <div class="btn1 ok-btn1">Ok</div>
+                    </div>
+                    </div>
                 </div>
             </div>
 
-
+            <!-- Description -->
             <div class="form-group row">
                 <label for="description" class="col-form-label col-sm-1">Description</label>
                 <div class="col-sm-11">
-                    <textarea class="form-control tooltip-control" id="inputDescription" name="inputDescription" rows="5" placeholder="Description" title="In this box you should give a brief description about how the environment should be to receive you better."></textarea>
+                    <textarea class="form-control tooltip-control input-form" id="inputDescription" name="inputDescription" rows="5" title="In this box you should give a brief description about how the environment should be to receive you better."></textarea>
                 </div>
             </div>
 
+            <!-- Terms and Conditions -->
             <div class="form-group row">
                 <label for="confirmDisability" class="form-check-label col-sm-10">
                     By checking, you confirm your disability and accept the Tiaser Square <a class="terms-and-conditions" href="#"><em>Terms and Conditions</em></a>.
                 </label>
                 <div class="col-sm-2">
-                    <input class="form-check-input" type="checkbox" id="confirmDisability" name="confirmDisability">
+                    <input class="form-check-input input-form" type="checkbox" id="confirmDisability" name="confirmDisability">
                 </div>
-
             </div>
 
+            <!-- Tiaser Square eClub -->
             <div class="form-group row">
                 <label for="eClubCheckbox" class="form-check-label col-sm-10">
                     By checking Join the Tiaser® eClub, you agree to receive promotional emails and other materials from Tiaser Square and its affiliates.
@@ -65,10 +96,11 @@
                     You must be 18 or over to receive materials from eClub.
                 </label>
                 <div class="col-sm-1">
-                    <input class="form-check-input" type="checkbox" id="eClubCheckbox" name="eClubCheckbox">
+                    <input class="form-check-input input-form" type="checkbox" id="eClubCheckbox" name="eClubCheckbox">
                 </div>
             </div>
 
+            <!-- Submit Button -->
             <div class="form-group row accessibility-submit-btn">
                 <div class="col-sm-12">
                     <button type="button" class="btn btn-primary btn-submit">Submit</button>
@@ -95,10 +127,12 @@
 </div>
 
 <footer>
+    <!-- JQuery, Bootstrap, JQuery UI, Validate Plugin, Calendar Plugin, Phone Formatter Plugin and Page's JavaScript  -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script type="text/javascript" src="js/jquery-input-mask-phone-number.min.js"></script>
     <script type="text/javascript" src="js/accessibility.js"></script>
 </footer>

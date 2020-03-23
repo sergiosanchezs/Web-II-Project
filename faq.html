@@ -18,4 +18,102 @@
             <input type="text" class="form-control FAQsInput" placeholder="Find the answer to your questions in our FAQs" aria-describedby="basic-addon1">
         </div>
     </div>
+
+    <!-- Accordion 1 (Questions and Answers) -->
+    <div class="row justify-content-around accordion-wrapped">
+        <div id="accordion" class="col-md-5">
+            <h3>What is Tiaser Square?</h3>
+            <div>
+                <p>In 2019, Tiaser Square restaurant was stablished in Canada by two brazilians and one colombian guys. 
+                    With the intention to show the best of South America cuisine.</p>
+            </div>
+            <h3>What type of food do we have?</h3>
+            <div>
+                <p>At Tiaser Square we offer the most famous plates from Brazil and Colombia.</p>
+            </div>
+            <h3>Are reservations required?</h3>
+            <div>
+                <p>Reservations are not required; however, they are encouraged, especially for the holidays and on weekends.
+                Reservations may be made online at, <a href="#bookATable" id="bookATable">tiasersquare.com/reservation/</a>.
+                You may also contact your local Tiaser Square via phone.</p>
+            </div>
+            <h3>Do you any Birthday specials by any chance?</h3>
+            <div>
+                <p>It would be our privilege to share in your birthday celebration. Our unique concept is exciting and interactive for all special events. 
+                    We do offer a complimentary dessert for the guest of honor. 
+                    Make sure to sign up for the Tiaser eClub for the latest news, events and promotions.</p>
+            </div>
+            <h3>Do you have children's menu?</h3>
+            <div>
+                <p>The Tiaser Square offers a special menu for kids.</p>
+            </div>
+            <h3>What credit cards are accepted?</h3>
+            <div>
+                <p>American Express, Diners Club, Discover, JCB, MasterCard and Visa</p>
+            </div>
+        </div>
+        <!-- Accordion 2 (Questions and Answers) -->
+        <div id="accordion2" class="col-md-5">
+            <h3>Do you offer Gluten Free options?</h3>
+            <div>
+                <p>We have many wonderful gluten free options. 
+                    Please contact your local Tiaser Square and ask to speak with the manager or email us at info@tiasersquare.com.</p>
+            </div>
+            <h3>Do you have All You Can Eat options?</h3>
+            <div>
+                <p>No. We still don't have all you can eat options, but we are working on it.</p>
+            </div>
+            <h3>Where does the beef in Canada comes from?</h3>
+            <div>
+                <p>We serve 100% Canadian beef, aged a minimum of 21 days to enhance the flavor and tenderness of each cut.</p>
+            </div>
+            <h3>Do you ever share your recipes?</h3>
+            <div>
+                <p>Please contact your local Fogo de Chão and ask to speak with the manager or 
+                    email us at info@tiasersquare.com for questions on select recipes.</p>
+            </div>
+            <h3>Do you offer franchising opportunities?</h3>
+            <div>
+                <p>Yes, Tiaser Square is considering international franchising opportunities. 
+                    Please contact Tiago Soriano tiagosoriano@fogo.com with questions regarding business expansion outside Canada.</p>
+            </div>
+            <h3>Who are your suppliers?</h3>
+            <div>
+                <p>We have enjoyed long tenures with the most widely respected and responsible suppliers in the business. Our partners share our “Respeito Pela Comida” (“respect for food”), 
+                    and we continually work together to ensure ongoing mutual guidance and transparency so we can deliver safe, high quality and delicious food to our guests.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT US Button -->
+    <div class="row justify-content-center p-3">
+        <div class="col-12">
+            <span>Have questions for TiaserSquare?</span>
+            <button class="btn ml-3 contact-button">CONTACT US</button>
+        </div>
+    </div>
 </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="modal-close-span" aria-hidden="true">&times;</span>
+              </button>
+
+            <h2>Question:</h2>
+            <p class="userClickedQuestion">[userClickedQuestion]</p>
+            <br>
+            <h2>Answer:</h2>
+            <p class="userClickedAnswer">[answer]</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>

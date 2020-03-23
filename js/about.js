@@ -22,14 +22,17 @@ $(document).ready(function(){
 
 	$(".btn-accessibility").click(function() {
 		main.load("accessibility.html");
+		$(window).scrollTop(0);
 	});
 
 	$(".btn-donations").click(function() {
 		main.load("donations.html");
+		$(window).scrollTop(0);
 	});
 
 	$(".btn-deals").click(function() {
 		main.load("deals.html");
+		$(window).scrollTop(0);
 	});
 
 	$(".number").counterUp({delay: 10, time: 2000});

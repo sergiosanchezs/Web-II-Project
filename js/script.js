@@ -21,15 +21,18 @@ $(document).ready(function(){
         main.load(urlReal, function(){      // This will load the page
             $(".main_nav").removeClass("active");   // after page loaded, all the elements with the class "main_nav" will be selected and remove active class
             $(urlHashTag).addClass("active");      // It will add active class to the element clicked.
+            $(window).scrollTop(0);
         });
     });
 
 	$(".faq-button").click(function() {
-		main.load("faq.html");
+        main.load("faq.html");
+        $(window).scrollTop(0);
     });
 
     $(".bookATable-button").click(function() {
-		main.load("bookatable.html");
+        main.load("bookatable.html");
+        $(window).scrollTop(0);
     });
     
 
@@ -110,7 +113,9 @@ $(document).ready(function(){
     // Activating the tooltip at the end
     $("#nameInput").keyup(function () {
         $(this).css('textTransform', 'capitalize');  
-    }).tooltip();
+    }).tooltip({
+        hide: { effect: "explode", duration: 1000 }
+    });
 
     // On every keyup transform the email text to capitalize if empty else lowercase
     // Activating the tooltip at the end
@@ -121,5 +126,7 @@ $(document).ready(function(){
         } else {
             $(this).css('textTransform', 'lowercase');
         }
-    }).tooltip();
+    }).tooltip({
+        hide: { effect: "explode", duration: 1000 }
+    });
 });
