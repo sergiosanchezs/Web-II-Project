@@ -6,9 +6,7 @@ $(document).ready(function(){
     });
 
     // Auto Scroll
-    $(".jcarousel").jcarouselAutoscroll({
-        interval: 4000
-    });
+    $(".jcarousel").jcarouselAutoscroll();
 
     // On mouse hover Stop Auto Scroll
     // $('.jcarousel').jcarouselAutoscroll({
