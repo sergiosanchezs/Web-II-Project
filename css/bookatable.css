@@ -10,7 +10,7 @@
 .book-form {
     /* position: absolute; */
     left: 0;
-    margin: 60px;
+    margin: auto;
     /* margin-left: 10rem; */
     min-width: 40%;
     max-width: 80%;
