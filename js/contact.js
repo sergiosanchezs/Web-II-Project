@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    // Put the Contact page code in here
 
     $("#dialog-terms").hide();
 
@@ -18,16 +17,29 @@ $(document).ready(function(){
 
         // Checks if the form is valid when submited
         var form = $("#contact-form");
+        var firstName = $("#inputFirstName"), email = $("#inputEmail"), message = $("#inputMessage");
+
         if (form.valid()) {
-            alert("Message sent!");
-            $("#inputFirstName").removeClass("errorClass");
-            $("#inputEmail").removeClass("errorClass");
-            $("#inputMessage").removeClass("errorClass");
+            alert("Message sent!");  
+        }
+
+        if (firstName.valid()) {
+            firstName.removeClass("errorClass");
         }
         else {
-            $("#inputFirstName").addClass("errorClass");
-            $("#inputEmail").addClass("errorClass");
-            $("#inputMessage").addClass("errorClass");
+            firstName.addClass("errorClass");  
+        }
+        if (email.valid()) {
+            email.removeClass("errorClass");
+        }
+        else {
+            email.addClass("errorClass");  
+        }
+        if (message.valid()) {
+            message.removeClass("errorClass");
+        }
+        else {
+            message.addClass("errorClass");  
         }
 
         return false;

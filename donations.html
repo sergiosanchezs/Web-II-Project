@@ -32,8 +32,8 @@
                     <div class="form-content my-4">
 
                         <!-- From about organization info -->
-                            <form class="organization-form" id="donations-form">
-                                <h5 class="py-3 justify-content-left">Organization Info</h5>
+                            <form class="form" id="form">
+                                <div class="form-title py-3 justify-content-left">Organization Info</div>
                                 <div class="form-row">
                                     <div class="form-group col-md-3">
                                         <label for="inputCountry">Country</label>
@@ -49,8 +49,8 @@
                                         <input type="number" class="form-control tooltip-control" id="inputTaxID" name="inputTaxID" placeholder="Tax ID" title="Please, enter the Tax ID.">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label for="inputTaxID">Zip</label>
-                                        <input type="text" class="form-control tooltip-control" id="inputZip" name="inputZip" placeholder="Zip Code" title="Please, enter the zip code.">
+                                        <label for="inputZip1">Zip</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputZip1" name="inputZip1" placeholder="Zip Code" title="Please, enter the zip code.">
                                     </div>
                                 </div>
                                     
@@ -68,7 +68,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputType">Organization Type</label>
-                                        <select id="inputType" class="form-control">
+                                        <select id="inputType" class="form-control" name="inputType">
                                             <option selected>Choose...</option>
                                             <option>Other</option>
                                             <option>Activities Initiatives</option>
@@ -105,55 +105,166 @@
                                 </div>
 
                                 <div class="form-row">
-                                    <div class="form-group col-md-3">
-                                        <label for="inputStreet">Street</label>
-                                        <input type="text" class="form-control tooltip-control" id="inputStreet" name="inputStreet" placeholder="Street Name" title="Please, enter the street address.">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="inputCity">City</label>
-                                        <input type="text" class="form-control tooltip-control" id="inputCity" name="inputCity" placeholder="City" title="Please, enter the city.">
+                                    <div class="form-group col-md-7">
+                                        <label for="inputStreet1">Street</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputStreet1" name="inputStreet1" placeholder="Street Name" title="Please, enter the street address.">
                                     </div>
                                     <div class="form-group col-md-3">
-                                        <label for="inputState">Province/State</label>
-                                        <input type="text" class="form-control tooltip-control" id="inputState" name="inputState" placeholder="Ex: ON" title="Please, enter the province/state.">
+                                        <label for="inputCity1">City</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputCity1" name="inputCity1" placeholder="City" title="Please, enter the city.">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputState1">Province/State</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputState1" name="inputState1" placeholder="Ex: ON" title="Please, enter the province/state.">
                                     </div>
                                 </div>
 
-                                <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputFirstName">First Name</label>
-                                    <input type="text" class="form-control tooltip-control" id="inputFirstName" name="inputFirstName" placeholder="First Name" title="Please, enter your first name.">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="inputLastName">Last Name</label>
-                                    <input type="text" class="form-control tooltip-control" id="inputLastName" name="inputLastName" placeholder="Last Name" title="Please, enter your last name.">
-                                </div>
-                                </div>
+                                
                                 <div class="form-row">
                                 <div class="form-group col-md-2">
                                     <label for="inputArea">Area</label>
-                                    <select id="inputArea" class="form-control">
+                                    <select id="inputArea" class="form-control" name="inputArea">
                                         <option selected>Choose...</option>
                                         <option>+1 - Canada</option>
                                         <option>+55 - Brazil</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="inputPhone">Phone</label>
-                                    <input type="number" class="form-control tooltip-control" id="inputPhone" name="inputPhone" placeholder="1234567891" title="Please, enter your phone.">
+                                    <label for="inputOrgPhone">Phone</label>
+                                    <input type="number" class="form-control tooltip-control" id="inputOrgPhone" name="inputOrgPhone" placeholder="1234567891" title="Please, enter the organization phone.">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputEmail">Email</label>
-                                    <input type="email" class="form-control tooltip-control" id="inputEmail" name="inputEmail" placeholder="example@email.com" title="Please, enter your email.">
+                                    <label for="inputOrgEmail">Email</label>
+                                    <input type="email" class="form-control tooltip-control" id="inputOrgEmail" name="inputOrgEmail" placeholder="example@email.com" title="Please, enter the organization email.">
                                 </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="form-group">
-                                        <label for="inputMessage">Message</label>
-                                        <textarea class="form-control tooltip-control" id="inputMessage" name="inputMessage" rows="4" placeholder="Write your message here" title="Please, enter your message."></textarea>
+                                        <label for="inputMission">Mission Statement</label>
+                                        <textarea class="form-control tooltip-control" id="inputMission" name="inputMission" rows="3" placeholder="Write the organization mission statement here" title="Please, enter the mission statement."></textarea>                                    
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputWebsite">Website</label>
+                                    <input type="text" class="form-control tooltip-control" id="inputWebsite" name="inputWebsite" placeholder="Website" title="Please, enter the organization website.">
+                                </div>  
+                                
+                                
+                                <div class="form-title pt-5 pb-3 justify-content-left">Requester Info</div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputFirstName">First Name</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputFirstName" name="inputFirstName" placeholder="First Name" title="Please, enter your first name.">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputLastName">Last Name</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputLastName" name="inputLastName" placeholder="Last Name" title="Please, enter your last name.">
                                     </div>
                                 </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label for="inputArea">Area</label>
+                                        <select id="inputArea" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>+1 - Canada</option>
+                                            <option>+55 - Brazil</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPhone">Phone</label>
+                                        <input type="number" class="form-control tooltip-control" id="inputPhone" name="inputPhone" placeholder="1234567891" title="Please, enter your phone.">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail">Email</label>
+                                        <input type="email" class="form-control tooltip-control" id="inputEmail" name="inputEmail" placeholder="example@email.com" title="Please, enter your email.">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="inputTitle">Title in the organization</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputTitle" name="inputTitle" placeholder="Title" title="Please, enter your title in the organization.">
+                                    </div>
+                                </div>
+                                <div class="pb-3 pt-5 form-title justify-content-left">Request Details</div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="inputFile1">Attach Document</label>
+                                            <input type="file" class="form-control-file" id="inputFile1" name="inputFile1">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputFile2">Attach Document</label>
+                                            <input type="file" class="form-control-file" id="inputFile2" name="inputFile2">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputFile3">Attach Document</label>
+                                            <input type="file" class="form-control-file" id="inputFile3" name="inputFile3">
+                                        </div>
+                                            <p class="file-info">Please attach the following documents:</p>
+                                            <p class="file-info">Certified 501(c)(3) document (Not Tax-Exempt form)</p>
+                                            <p class="file-info">Documents that describe your event, or any other related document.</p>                                        
+                                            <p class="file-info">(Click on Browse button to attach multiple documents. Files will be uploaded when you click submit. A maximum of three attachments will be saved. Attachments must be in one (1) of the following formats: Pdf, doc, docx, xls, xlsx. Limit the file size to less than 4MB.)</p>
+                                    </div>
+                                <!-- </div> -->
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="inputRefer">Refferred By</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputRefer" name="inputRefer" placeholder="Referral" title="Please, enter the contact name of the person at this organization who requested you to submit your request. Leave blank if no one referred you">
+                                    </div>
+                                </div> 
+                                <div class="form-row">               
+                                    <div class="form-group col-md-12">
+                                        <label for="inputComments">Comments</label>
+                                        <textarea class="form-control tooltip-control" id="inputComments" name="inputComments" rows="3" placeholder="Comments" title="Please, enter comments regarding any information missing above."></textarea>                                    
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkboxAddress">
+                                            <label class="form-check-label checkboxLabel" for="checkboxAddress">
+                                                Mailing address is the same as above.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-7">
+                                        <label for="inputStreet2">Street</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputStreet2" name="inputStreet2" placeholder="Street Name" title="Please, enter the street address.">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputCity2">City</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputCity2" name="inputCity2" placeholder="City" title="Please, enter the city.">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputState2">Province/State</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputState2" name="inputState2" placeholder="Ex: ON" title="Please, enter the province/state.">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3">
+                                        <label for="inputZip2">Zip</label>
+                                        <input type="text" class="form-control tooltip-control" id="inputZip2" name="inputZip2" placeholder="Zip Code" title="Please, enter the zip code.">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkboxYo" name="checkboxYo">
+                                            <label class="form-check-label checkboxLabel" for="checkboxYo">
+                                                I confirm that I am 14 years or older.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="pt-3">*Please Note*</p>
+                                <p>Submission of this request does not guarantee that your request will be fulfilled.</p>
+
+                                <button type="submit" class="btn my-5 btn-sumbit" id="btn-submit">Submit Request</button>
                             </form>
+                            
+
+                    </div>
                 </div>
             </div>
         </div>

@@ -12,47 +12,47 @@
     min-height: 840px;
   }
 
-  .contact-form {
-    position: absolute;
-    left: 0;
-    margin: 60px;
-    margin-left: 10rem;
-    max-width: 40%;
-    max-height: 90%;
-    padding: 16px;
-    background-color: white;
-  }
+.contact-form {
+  position: absolute;
+  left: 0;
+  margin: 60px;
+  margin-left: 10rem;
+  max-width: 40%;
+  max-height: 90%;
+  padding: 16px;
+  background-color: white;
+}
 
-  .subtext {
-    font-size: 50px;
-    font-weight: bolder;
-    line-height: 1.2;
-    z-index: 1;
-  }
+.subtext {
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 1.2;
+  z-index: 1;
+}
 
-  .contact-logo {
-    position: absolute;
-    text-align: center;
-    top: 3px;
-    left: 0;
-    right: 0;
-    font-weight: normal;
-    font-size: 120px;
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
-    z-index: 0;
-  }
+.contact-logo {
+  position: absolute;
+  text-align: center;
+  top: 3px;
+  left: 0;
+  right: 0;
+  font-weight: normal;
+  font-size: 120px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 0;
+}
 
-  .checkboxLabel1, .checkboxLabel2 {
-      text-align: left;
-  }
-  
-  form .error {
-    color: #ff0000;
-  }
+.checkboxLabel1, .checkboxLabel2 {
+    text-align: left;
+}
 
-  .errorClass {
-    border-color: #ff0000;
-  }
+form .error {
+  color: #ff0000;
+}
+
+.errorClass {
+  border-color: #ff0000;
+}
   
