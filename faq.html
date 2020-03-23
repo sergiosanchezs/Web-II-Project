@@ -19,6 +19,7 @@
         </div>
     </div>
 
+    <!-- Accordion 1 (Questions and Answers) -->
     <div class="row justify-content-around accordion-wrapped">
         <div id="accordion" class="col-md-5">
             <h3>What is Tiaser Square?</h3>
@@ -51,6 +52,7 @@
                 <p>American Express, Diners Club, Discover, JCB, MasterCard and Visa</p>
             </div>
         </div>
+        <!-- Accordion 2 (Questions and Answers) -->
         <div id="accordion2" class="col-md-5">
             <h3>Do you offer Gluten Free options?</h3>
             <div>
@@ -83,10 +85,35 @@
         </div>
     </div>
 
-        <div class="row justify-content-center p-3">
-            <div class="col-12">
-                <span>Have questions for TiaserSquare?</span>
-                <button class="btn ml-3 contact-button">CONTACT US</button>
-            </div>
+    <!-- CONTACT US Button -->
+    <div class="row justify-content-center p-3">
+        <div class="col-12">
+            <span>Have questions for TiaserSquare?</span>
+            <button class="btn ml-3 contact-button">CONTACT US</button>
         </div>
+    </div>
 </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="modal-close-span" aria-hidden="true">&times;</span>
+              </button>
+
+            <h2>Question:</h2>
+            <p class="userClickedQuestion">[userClickedQuestion]</p>
+            <br>
+            <h2>Answer:</h2>
+            <p>[answer]</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -26,6 +26,16 @@ $(document).ready(function(){
         source: availableTagsArray
     });
 
+    // Get the user clicked question
+    $("ul").click(function(){
+        // Pass the question to the modal
+        var question = $(".FAQsInput").val();
+        $(".userClickedQuestion").text(question);
+
+        // Show Bootstrap modal
+        $("#exampleModal").modal('show');
+    });
+
     // Set the accordion widget
     $("#accordion, #accordion2").accordion({
         collapsible: true,
