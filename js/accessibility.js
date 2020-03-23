@@ -3,6 +3,7 @@ $(document).ready(function(){
     // Hide the two dialog elements
     $("#dialog-terms").hide();
     $("#confirmation-dialog").hide();
+    $(".calendar").hide();
 
     // Activate the tooltip widget for each input box (exept date)
     $(".tooltip-control").tooltip({
@@ -56,18 +57,29 @@ $(document).ready(function(){
     });
 
     // Datepicker widget for the user visualize better the date.
-    $("#inputDate").datepicker({
-        showOtherMonths: true,
-        selectOtherMonths: true,
 
-        showOn: "button",
-        buttonImage: "images/calendar-icon.png",
-        buttonImageOnly: true,
-        buttonText: "Select date"
+    let c = $('.calendar');
+    let calendar = new Calendar(c);
+
+
+
+    $("#inputDate").focus(function () {
+        $(".calendar").show("blind", "slow");
     });
 
-    // Format the date
-    $("#inputDate").datepicker("option", "dateFormat", "yy-mm-dd")
+    c.find('.ok-btn1').on('click', function() {
+        var dateValue = calendar.getSelectedDate().fullDate;
+        $("#inputDate").val(dateValue);
+        $(".calendar").hide("blind", "slow");
+      });
+      c.find('.cancel-btn1').on('click', function() {
+        $(".calendar").hide("blind", "slow");
+      });
+
+    $(".input-form").focus(function () {
+        $(".calendar").hide("blind", "slow");
+    });
+
 
     // Validation plugin used for form validation
     $("#disabilitySubmitForm").validate({
@@ -85,6 +97,9 @@ $(document).ready(function(){
             },
             confirmDisability: {
                 required: true
+            },
+            inputDate: {
+                required: true
             }
         },
         messages: {
@@ -101,6 +116,9 @@ $(document).ready(function(){
             },
             confirmDisability: {
                 required: "Term and Conditions is required."
+            },
+            inputDate: {
+                required: "Please, you must provide a date."
             }
         }
     });
