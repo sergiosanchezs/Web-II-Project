@@ -3,6 +3,8 @@ $(document).ready(function(){
     // Hide the two dialog elements
     $("#dialog-terms").hide();
     $("#confirmation-dialog").hide();
+
+    // Hide the calendar
     $(".calendar").hide();
 
     // Activate the tooltip widget for each input box (exept date)
@@ -13,7 +15,7 @@ $(document).ready(function(){
             collision: "none"
         },
         open: function( event, ui ) {
-            ui.tooltip.animate({ top: ui.tooltip.position().top + 8 }, "fast" );
+            ui.tooltip.animate({ top: "+=8" }, "fast" ); // Move to the bottom direction
         }
     });
 
@@ -22,18 +24,20 @@ $(document).ready(function(){
         // JQuery UI Utility** (position)
         position: {
             my: "left top",
-            at: "right+50 top-10",
+            at: "right+2 top-10",
             collision: "none"
+        },
+        open: function( event, ui ) {
+            ui.tooltip.animate({left: "+=8"}, "fast"); // Move to the right direction
         }
     });
 
     $(".btn-submit").click(function(){
-
-        // Checks if the form is valid when submited
         var form = $("#disabilitySubmitForm");
         var inputEmail = $("#inputEmail");
         var emailDialog = $("#emailDialog");
 
+        // Checks if the form is valid when submited and display a dialog to the user
         if (form.valid()) {
             $("#confirmation-dialog").dialog({
                 modal: true,
@@ -51,31 +55,37 @@ $(document).ready(function(){
               });
         }
 
-        // Prevents the tooltip action when the submit button is pressed
+        // Prevents tooltip default action when the submit button is pressed
         $("[title]").tooltip("option", "hide");
-
     });
 
-    // Datepicker widget for the user visualize better the date.
+    // Phone Formatter Plugin for auto formating the phone input box
+    $('#inputPhone').usPhoneFormat({
+        format: '(xxx) xxx-xxxx'
+      });
 
+    // Calendar Plugin for the user visualize better the date.
     let c = $('.calendar');
     let calendar = new Calendar(c);
 
-
-
+    // Show the calendar when it's on focus
     $("#inputDate").focus(function () {
         $(".calendar").show("blind", "slow");
     });
 
+    // Gets the full date to the input box and close the calendar when the OK button is clicked
     c.find('.ok-btn1').on('click', function() {
         var dateValue = calendar.getSelectedDate().fullDate;
         $("#inputDate").val(dateValue);
         $(".calendar").hide("blind", "slow");
       });
-      c.find('.cancel-btn1').on('click', function() {
-        $(".calendar").hide("blind", "slow");
-      });
 
+    // Hide the calendar when the CANCEL button is clicked
+    c.find('.cancel-btn1').on('click', function() {
+        $(".calendar").hide("blind", "slow");
+    });
+
+    // Hide the calendar when the user focus on another input box
     $(".input-form").focus(function () {
         $(".calendar").hide("blind", "slow");
     });

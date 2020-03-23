@@ -25,3 +25,16 @@ h2{
 #accordion div,#accordion2 div{
     margin: 5px;
 }
+
+/* Bootstrap Dialog */
+.modal-body{
+    padding: 0.7rem;
+    text-align: left;
+}
+.modal-close-span{
+    font-size: 1.7rem;
+}
+.modal-footer{
+    display: initial;
+    text-align: center;
+}
