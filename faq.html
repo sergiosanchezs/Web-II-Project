@@ -7,18 +7,22 @@
 <link rel="stylesheet" href="css/faq.css">
 <script src="js/faq.js"></script>
 
-<div class="wrapped">
-    <h2>Frequently Asked Questions</h2>
 
-    <div class="row justify-content-center">
-        <div class="input-group mb-3 col-sm-5">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
+
+    <div class="header">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="row justify-content-center">
+            <div class="input-group mb-3 col-sm-5">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input type="text" class="form-control FAQsInput" placeholder="Find the answer to your questions in our FAQs" aria-describedby="basic-addon1">
             </div>
-            <input type="text" class="form-control FAQsInput" placeholder="Find the answer to your questions in our FAQs" aria-describedby="basic-addon1">
         </div>
     </div>
 
+<div class="wrapped">
     <!-- Accordion 1 (Questions and Answers) -->
     <div class="row justify-content-around accordion-wrapped">
         <div id="accordion" class="col-md-5">
@@ -86,9 +90,9 @@
     </div>
 
     <!-- CONTACT US Button -->
-    <div class="row justify-content-center p-3">
+    <div class="row justify-content-center py-5">
         <div class="col-12">
-            <span>Have questions for TiaserSquare?</span>
+            <span class="contactus-span">Have questions for TiaserSquare?</span>
             <button class="btn ml-3 contact-button">CONTACT US</button>
         </div>
     </div>
