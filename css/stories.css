@@ -39,6 +39,7 @@
     display: block;
     max-width: 100%;
     height: auto !important;
+    margin: 20px auto;
 }
 
 
@@ -82,7 +83,7 @@
 
 /** Carousel Pagination **/
 
-.jcarousel-pagination {
+/* .jcarousel-pagination {
     position: absolute;
     bottom: -40px;
     left: 50%;
@@ -122,4 +123,4 @@
     -webkit-box-shadow: 0 0 2px #F0EFE7;
     -moz-box-shadow: 0 0 2px #F0EFE7;
     box-shadow: 0 0 2px #F0EFE7;
-}
+} */
