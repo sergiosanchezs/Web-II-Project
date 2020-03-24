@@ -4,7 +4,6 @@
 }
 
 /** Carousel **/
-
 .jcarousel {
     position: relative;
     overflow: hidden;
@@ -27,6 +26,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .jcarousel div{
     background-color: #a2d5f2;
     display: block;
@@ -49,7 +49,7 @@
     padding-left: 15px;
 }
 
-/* Control */
+/* Carousel Control */
 
 .jcarousel-control-prev {
     left: 15px;
