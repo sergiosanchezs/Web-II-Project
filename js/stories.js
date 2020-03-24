@@ -13,7 +13,9 @@ $(document).ready(function(){
         });
 
     // Auto Scroll
-    $(".jcarousel").jcarouselAutoscroll();
+    $(".jcarousel").jcarouselAutoscroll({
+        interval: 3500
+    });
 
     // On mouse hover Stop Auto Scroll
     // $('.jcarousel').jcarouselAutoscroll({
