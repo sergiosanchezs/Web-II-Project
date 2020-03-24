@@ -12,7 +12,39 @@ $(document).ready(function(){
 
     // Adding the active class to the current page
     var main = $("main");
-    main.load("home.html");     // Loading the default home page
+
+    // Checking the url to load the correct page 
+    var url = window.location.href;
+    arr = url.split('#');
+    if (arr.length > 1){
+        var page = arr[1];
+        nav =  $(".main_nav");
+        // Check if the page belongs to one on the main_nav
+        var urlHashTag = "#"+page;
+        var isOnNavBar = false
+        for (var i = 0; i < nav.length - 1; i++){       // Excluding bookATable
+            urlHashTagElement = nav[i].getAttribute("href")
+            if (urlHashTagElement === urlHashTag)
+                isOnNavBar = true;
+        }
+        if (isOnNavBar){
+            main.load(page + ".html", function(){
+                $(".main_nav").removeClass("active");
+                $(urlHashTag).addClass("active");
+                $(window).scrollTop(0);
+            });
+        } else {
+            main.load(page + ".html", function(){
+                $(window).scrollTop(0);
+            });
+        }
+    } 
+    else {  // if there is no # after index
+        var urlHashTag = "#home";
+        main.load("home.html", function(){
+            $("#home").addClass("active");
+        });     // Loading the default home page
+    }
 
     // Behavior of the Navigation bar on click event to load the new page
     $(".main_nav").click(function() {   // This get any element with the class "main_nav" on it and add the click event.
@@ -30,9 +62,13 @@ $(document).ready(function(){
         $(window).scrollTop(0);
     });
 
-    $(".bookATable-button").click(function() {
-        main.load("bookatable.html");
+    $(".bookATable-button, #bookATable").click(function() {
+        var url = window.location.href;
+        var origin = window.location.origin;
+        var pathname = window.location.pathname;
+        window.location.href = origin + pathname + "#" + "bookATable";
         $(window).scrollTop(0);
+        location.reload();
     });
     
 
