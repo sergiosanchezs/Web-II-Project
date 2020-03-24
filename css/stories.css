@@ -1,7 +1,4 @@
-/* Wrap content */
 .jcarousel-wrapper {
-    text-align: center;
-    background-color: #a8d8ea;
     margin: 20px auto;
     position: relative;
     border: 10px solid #fff;
@@ -13,10 +10,6 @@
     box-shadow: 0 0 2px #999;
 }
 
-.wrapper {
-    padding: 2% 10%;
-}
-
 /** Carousel **/
 
 .jcarousel {
@@ -26,7 +19,7 @@
 }
 
 .jcarousel ul {
-    width: 10000em;
+    width: 20000em;
     position: relative;
     list-style: none;
     margin: 0;
@@ -34,20 +27,20 @@
 }
 
 .jcarousel li {
-    width: 800px;
-    margin: 20px 400px;
+    width: 200px;
     float: left;
+    border: 1px solid #fff;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-/* Carousel Itens */
-
-.list-item{
+.jcarousel img {
+    display: block;
     max-width: 100%;
     height: auto !important;
 }
+
 
 .list-item h3{
     line-height: 1.5;
@@ -84,4 +77,49 @@
 }
 .jcarousel-control-prev:hover, .jcarousel-control-next:hover {
     color: rgb(65, 62, 62);
+}
+
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
 }
