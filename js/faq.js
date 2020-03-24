@@ -54,7 +54,7 @@ $(document).ready(function(){
     });
 
     // Get the user clicked question
-    $("ul").click(function(){
+    $(".ui-autocomplete").click(function(){
         // Pass the question to the modal
         var userQuestion = $(".FAQsInput").val();
         $(".userClickedQuestion").text(userQuestion);
