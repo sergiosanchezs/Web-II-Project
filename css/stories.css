@@ -105,6 +105,7 @@
 /* Testimonial Wrap */
 .testimonial-wrap{
     margin-top: 3%;
+    padding: 0 1%;
 }
 
 .testimonial-section-heading{
@@ -114,14 +115,53 @@
     font-size: 1.9rem;
     color: #2B94D1;
     font-weight: 600;
+    padding: 0 8%;
 }
 
 .testimonial-section-heading p{
-    padding: 1% 27%;
+    padding: 1% 25%;
     font-size: 1.1rem;
     line-height: 1.5;
     color: #424242;
 }
-.form-group{
-    margin: 25px 0;
+
+/* Testimonial Form */
+#testimonialForm{
+    text-align: left;
 }
+
+.form-group{
+    margin: 27px 0;
+}
+
+.testimonial-submit-btn{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Error label */
+#testimonialForm label.error {
+    width: auto;
+    display: block;
+    color: rgb(168, 1, 1);
+}
+
+/* Bootstrap Modal */
+.modal-body{
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.modal-body p{
+    margin-top: 15px;
+}
+
+.modal-close-span{
+    font-size: 1.7rem;
+}
+
+.modal-footer{
+    display: initial;
+    text-align: center;
+}
+

@@ -71,7 +71,7 @@ $(document).ready(function(){
         }
 
         // Show Bootstrap modal
-        $("#exampleModal").modal('show');
+        $("#questionModal").modal('show');
     });
 
     // clear the input box when the modal button is clicked
