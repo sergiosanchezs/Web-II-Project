@@ -44,7 +44,7 @@ $(document).ready(function(){
 
     function showTitlte() {
         titleElement.toggle( "blind", {}, 1600);
-        subTitleElement.toggle( "fade", {}, 1600);
+        subTitleElement.show( "fade", {}, 1600);
     }
     
     showTitlte()
