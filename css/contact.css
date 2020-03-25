@@ -4,7 +4,7 @@
   }
 
 .bg-img {
-    background-image: url(../images/bg_1.jpg);
+    background-image: url(../images/bg_3.jpg);
     background-position: center center !important;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,5 +54,10 @@ form .error {
 
 .errorClass {
   border-color: #ff0000;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  min-height: 840px;
 }
   
