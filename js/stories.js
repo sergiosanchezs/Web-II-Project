@@ -62,24 +62,8 @@ $(document).ready(function(){
 
         // Checks if the form is valid when submited and display a dialog to the user
         if (form.valid()) {
-
             // Show Bootstrap modal
             $("#confirmationModal").modal('show');
-
-            // $("#confirmation-dialog").dialog({
-            //     modal: true,
-            //     height: 280,
-            //     width: 500,
-            //     buttons: {
-            //         "OK": function() {
-            //             $(this).dialog("close");
-            //         }
-            //     },
-            //     open: function(){
-            //         emailDialog.text(inputEmail.val());
-            //         emailDialog.addClass("text-lowercase");
-            //     }
-            //   });
         }
     });
 });
