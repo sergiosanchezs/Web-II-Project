@@ -56,7 +56,8 @@ $(document).ready(function(){
         dynamic: true,
         dropdown: true,
         scrollbar: true
-    });;
+    });
+    // debugger
     
     $( "#inputDate" ).datepicker({
         dateFormat: "yy-mm-dd"

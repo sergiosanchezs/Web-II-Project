@@ -1,9 +1,16 @@
 $(document).ready(function(){
     
     // Start the JQuery carousel plugin
-    $(".jcarousel").jcarousel({
-        wrap: 'circular'
-    });
+    var jcarousel = $('.jcarousel');
+
+    jcarousel
+        .on('jcarousel:reload jcarousel:create', function () {
+            var width = jcarousel.innerWidth();
+            jcarousel.jcarousel('items').css('width', width + 'px');
+        })
+        .jcarousel({
+            wrap: 'circular'
+        });
 
     // Auto Scroll
     $(".jcarousel").jcarouselAutoscroll();
@@ -21,4 +28,5 @@ $(document).ready(function(){
     $(".jcarousel-control-next").jcarouselControl({
         target: '+=1'
     });
+
 });

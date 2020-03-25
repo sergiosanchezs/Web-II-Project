@@ -1,20 +1,6 @@
-/* Wrap content */
 .jcarousel-wrapper {
-    text-align: center;
-    background-color: #a8d8ea;
-    margin: 20px auto;
+    margin: 20px 5%;
     position: relative;
-    border: 10px solid #fff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-    -moz-box-shadow: 0 0 2px #999;
-    box-shadow: 0 0 2px #999;
-}
-
-.wrapper {
-    padding: 2% 10%;
 }
 
 /** Carousel **/
@@ -26,7 +12,7 @@
 }
 
 .jcarousel ul {
-    width: 10000em;
+    width: 20000em;
     position: relative;
     list-style: none;
     margin: 0;
@@ -34,30 +20,33 @@
 }
 
 .jcarousel li {
-    width: 800px;
-    margin: 20px 400px;
+    width: 200px;
     float: left;
+    border: 1px solid #fff;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-/* Carousel Itens */
-
-.list-item{
+.jcarousel div{
+    background-color: #a2d5f2;
+    display: block;
     max-width: 100%;
-    height: auto !important;
 }
 
-.list-item h3{
+.jcarousel h3{
+    font-size: 1.5rem;
     line-height: 1.5;
-    padding: 6% 0;
+    padding: 2% 20%;
 }
 
-.client-img{
+.jcarousel img {
+    display: inline-block;
+    margin: 15px auto;
     border-radius: 100%;
-    width: 25%;
-    margin: 20px;
+    width: 15%;
+}
+.jcarousel em{
+    padding-left: 15px;
 }
 
 /* Control */
