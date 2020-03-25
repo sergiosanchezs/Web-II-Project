@@ -101,3 +101,12 @@
 .jcarousel-control-prev:hover, .jcarousel-control-next:hover {
     color: rgb(65, 62, 62);
 }
+
+/* Testimonial Wrap */
+.testimonial-wrap{
+    margin-top: 3%;
+}
+
+.form-group{
+    margin: 25px 0;
+}
