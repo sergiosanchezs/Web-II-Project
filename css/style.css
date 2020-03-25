@@ -34,7 +34,7 @@ h2 {
 
 .tangerine-font {
     font-family: 'Tangerine', cursive;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-weight: 500;
 }
 .nav-custom {
@@ -92,7 +92,6 @@ h2 {
 
 /********************************************************/  
 /* Start Footer */
-
 .footer-top-content{
     color: #ffffff;
     border-bottom: 2px solid #ffffff;
@@ -101,6 +100,20 @@ h2 {
 .footer-top-content .btn{
     padding: 8px 15px;
 }
+
+.span-div-footer-top{
+    padding: 0;
+}
+.btn-div-footer-top{
+    padding: 0 6% 0 0;
+}
+
+/* When the screen width is less than 1100px, the padding is 0 */
+@media only screen and (max-width: 1100px) {
+    .btn-div-footer-top{
+        padding: 0;
+    }
+  }
 
 .main_footer{
     background-color: #c9d6df;
@@ -119,7 +132,6 @@ footer a:hover{
 .instagram_imgs {
     max-height: 250px;
     min-width: 80px;
-    /* min-height: 100px; */
 } 
 
 #emailSubsForm label.error {

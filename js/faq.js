@@ -54,7 +54,7 @@ $(document).ready(function(){
     });
 
     // Get the user clicked question
-    $("ul").click(function(){
+    $(".ui-autocomplete").click(function(){
         // Pass the question to the modal
         var userQuestion = $(".FAQsInput").val();
         $(".userClickedQuestion").text(userQuestion);
@@ -89,12 +89,15 @@ $(document).ready(function(){
 
     // Load the book a table page
     $("#bookATable").click(function() {
-		$("main").load("bookatable.html");
+        $("main").load("bookatable.html");
+        // Scroll the window to the top
+        $(window).scrollTop(0);
     });
 
     // Load the contact page
     $(".contact-button").click(function() {
-		$("main").load("contact.html");
+        $("main").load("contact.html");
+        $(window).scrollTop(0);
     });
 
 });

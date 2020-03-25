@@ -16,9 +16,6 @@ $(document).ready(function(){
     // Hide both the heading and the cards array
     breakfastTitle.hide();
     cards.hide();
-    
-
-    
 
     // Title animation (when the page is loaded)
     setTimeout(function() {
@@ -62,5 +59,12 @@ $(document).ready(function(){
         }, 600);
 
         setTimeout(unFoldCards, 2000);
+    });
+
+    // Load Book a table on click of the "Make a reservation" button
+    $(".pricing-card button").click(function() {
+        $("main").load("bookatable.html");
+        // Scroll the window to the top
+        $(window).scrollTop(0);
     });
 });

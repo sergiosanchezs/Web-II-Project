@@ -16,10 +16,16 @@ $(document).ready(function(){
     $(".jcarousel").jcarouselAutoscroll();
 
     // On mouse hover Stop Auto Scroll
-    // $('.jcarousel').jcarouselAutoscroll({
-    //     autostart: false
-    // });
+    $(".jcarousel").on({
+        mouseenter: function(){
+            $('.jcarousel').jcarouselAutoscroll('stop');
+        },
+        mouseleave: function(){
+            $('.jcarousel').jcarouselAutoscroll('start');
+        }
+    });
 
+    
     // Set the controls
     $(".jcarousel-control-prev").jcarouselControl({
         target: '-=1'
@@ -29,20 +35,4 @@ $(document).ready(function(){
         target: '+=1'
     });
 
-    $('.jcarousel-pagination')
-        .on('jcarouselpagination:active', 'a', function() {
-            $(this).addClass('active');
-        })
-        .on('jcarouselpagination:inactive', 'a', function() {
-            $(this).removeClass('active');
-        })
-        .on('click', function(e) {
-            e.preventDefault();
-        })
-        .jcarouselPagination({
-            perPage: 1,
-            item: function(page) {
-                return '<a href="#' + page + '">' + page + '</a>';
-            }
-        });
 });
