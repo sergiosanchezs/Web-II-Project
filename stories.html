@@ -51,36 +51,41 @@
     </div>
 
     <div class="testimonial-wrap">
-        <h3>Do you want to see your testimonial in our page as well?</h3>
-        <p>It's simple! You just need to upload your image and give a description about your experience at Tiaser Square.</p>
-        
+
+        <div class="testimonial-section-heading mb-5">
+            <h3>Do you want to see your testimonial in our page as well?</h3>
+            <p>It's simple! You just need to upload your image and give a description about your experience at Tiaser Square.</p>
+        </div>
+
         <form id="testimonialForm">
 
             <!-- Full Name Input -->
             <div class="form-group row">
-                <label for="inputName" class="col-md-1 col-form-label">Full Name</label>
-                <div class="col-lg-5">
+                <label for="inputName" class="col-2 col-lg-1 col-form-label">Full Name</label>
+                <div class="col-10 col-md-4 col-lg-5">
                     <input type="text" class="form-control tooltip-control input-form" id="inputName" name="inputName" placeholder="e.g. Will Smith" title="Please, provide your name.">
                 </div>
 
                 <!-- Image Input -->
-                <label for="inputImage" class=" col-md-1 col-form-label">Image</label>
-                <div class="custom-file col-lg-5">
-                    <input type="file" class="form-control custom-file-input input-form" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                <label for="inputimage" class="col-2 col-lg-1 col-form-label">Image</label>
+                <div class="input-group col-10 col-md-4 col-lg-5">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile01">
+                      <label class="custom-file-label" for="inputGroupFile01">Choose image</label>
+                    </div>
                 </div>
             </div>
 
             <!-- Description -->
             <div class="form-group row">
-                <label for="description" class="col-form-label col-md-1">Description</label>
-                <div class="col-md-11">
+                <label for="description" class="col-form-label col-2 col-lg-1">Description</label>
+                <div class="col-10 col-lg-11">
                     <textarea class="form-control tooltip-control input-form" id="inputDescription" name="inputDescription" rows="5" title="You should provide a description about your visit to our restaurant."></textarea>
                 </div>
             </div>
 
              <!-- Submit Button -->
-             <div class="form-group row testimonial-submit-btn">
+             <div class="form-group row testimonial-submit-btn mt-4">
                 <div class=" col-md-12">
                     <button type="button" class="btn btn-primary btn-submit">Submit</button>
                 </div>
