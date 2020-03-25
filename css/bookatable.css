@@ -1,3 +1,25 @@
+/* Header Wrap */
+.header{
+    padding: 5%;
+    background-image: url(../images/bg_7.jpg);
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    position: relative;
+}
+
+.bookatable-title{
+    font-weight: 500;
+    margin-bottom: 3% !important;
+    font-size: 3.5rem;
+    line-height: 1.3;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    margin-bottom: 0.9rem;
+    text-shadow: 2px 2px #000000;
+}
+
 .book-bg-img {
     background-image: url(../images/bg_6.jpg);
     background-position: center center !important;
