@@ -1,5 +1,6 @@
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 
@@ -63,29 +64,29 @@
             <div class="form-group row">
                 <label for="inputName" class="col-2 col-lg-1 col-form-label">Full Name</label>
                 <div class="col-10 col-md-4 col-lg-5">
-                    <input type="text" class="form-control tooltip-control input-form" id="inputName" name="inputName" placeholder="e.g. Will Smith" title="Please, provide your name.">
+                    <input type="text" class="form-control tooltip-control input-form" id="inputName" name="inputName" placeholder="e.g. Will Smith" title="Please, provide your full name.">
                 </div>
 
                 <!-- Image Input -->
-                <label for="inputimage" class="col-2 col-lg-1 col-form-label">Image</label>
+                <label for="inputImage" class="col-2 col-lg-1 col-form-label">Image</label>
                 <div class="input-group col-10 col-md-4 col-lg-5">
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="inputGroupFile01">
-                      <label class="custom-file-label" for="inputGroupFile01">Choose image</label>
+                      <input type="file" class="custom-file-input" id="inputImage" name="inputImage" title="Please, provide an image of your visit to our restaurant.">
+                      <label class="custom-file-label" for="inputImage">Choose image</label>
                     </div>
                 </div>
             </div>
 
             <!-- Description -->
             <div class="form-group row">
-                <label for="description" class="col-form-label col-2 col-lg-1">Description</label>
+                <label for="inputDescription" class="col-form-label col-2 col-lg-1">Description</label>
                 <div class="col-10 col-lg-11">
                     <textarea class="form-control tooltip-control input-form" id="inputDescription" name="inputDescription" rows="5" title="You should provide a description about your visit to our restaurant."></textarea>
                 </div>
             </div>
 
              <!-- Submit Button -->
-             <div class="form-group row testimonial-submit-btn mt-4">
+             <div class="form-group row testimonial-submit-btn">
                 <div class=" col-md-12">
                     <button type="button" class="btn btn-primary btn-submit">Submit</button>
                 </div>
@@ -94,5 +95,26 @@
         </form>
     </div>
 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="modal-close-span" aria-hidden="true">&times;</span>
+        </button>
+
+        <h3>Your message was received</h3>
+        <p>Thank you for submitting your testimonial. 
+            We appreciate it a lot! Within the next hours, your testimonial will be analyzed for your staff.</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-btn" data-dismiss="modal">OK</button>
+    </div>
+    </div>
+</div>
 </div>
 
