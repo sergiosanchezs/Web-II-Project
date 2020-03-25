@@ -14,18 +14,6 @@ $(document).ready(function(){
 
     $(".btn-submit").click(function(){
         alert("Working");
-
-        var taxID = $("#inputTaxID");
-
-        if (taxID.valid()) { taxID.removeClass("errorClass"); }
-            
-        else { taxID.addClass("errorClass"); } 
-
-        // Checks if the form is valid when submited
-        // var form = $("#form");
-        // if (form.valid()) {
-        //     alert("Donate request sent!");  
-        // }
         
         return false;
     });
@@ -182,8 +170,14 @@ $(document).ready(function(){
             $('#inputStreet2').removeAttr('disabled');
             $('#inputCity2').removeAttr('disabled');
             $('#inputState2').removeAttr('disabled');
+            $('#inputZip2').removeAttr('disabled');
           }
     });
+
+    $("#line").animate(
+        { width: 800 },
+        3000
+    );
         
     
 
