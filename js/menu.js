@@ -60,4 +60,11 @@ $(document).ready(function(){
 
         setTimeout(unFoldCards, 2000);
     });
+
+    // Load Book a table on click of the "Make a reservation" button
+    $(".pricing-card button").click(function() {
+        $("main").load("bookatable.html");
+        // Scroll the window to the top
+        $(window).scrollTop(0);
+    });
 });
