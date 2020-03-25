@@ -16,9 +16,6 @@ $(document).ready(function(){
     // Hide both the heading and the cards array
     breakfastTitle.hide();
     cards.hide();
-    
-
-    
 
     // Title animation (when the page is loaded)
     setTimeout(function() {
