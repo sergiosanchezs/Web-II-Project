@@ -33,19 +33,32 @@ $(document).ready(function(){
         map.show( "drop", { direction:'left' } , 1000 );
     }
 
-    $("#inputFullName").tooltip({
+    var inputFullName = $("#inputFullName");
+    var inputEmail = $("#inputEmail");
+    var inputPhone = $("#inputPhone");
+    var inputDate = $("#inputDate");
+    var inputTime = $("#inputTime");
+    var inputPeople = $("#inputPeople");
+    var dateModal = $("#dateModal");
+    var timeModal = $("#timeModal");
+
+    $("#reservationModal").hide();
+
+    inputFullName.tooltip({
         hide: { effect: "explode", duration: 1000 }
     });
-    $("#inputEmail").tooltip({
+    inputEmail.tooltip({
         hide: { effect: "explode", duration: 1000 }
     });
-    $("#inputPhone").tooltip({
+    inputPhone.tooltip({
         hide: { effect: "explode", duration: 1000 }
     });
-    $("#inputDate").tooltip({
+    inputDate.tooltip({
         hide: { effect: "explode", duration: 1000 }
+    }).datepicker({
+        dateFormat: "yy-mm-dd"
     });
-    $("#inputTime").tooltip({
+    inputTime.tooltip({
         hide: { effect: "explode", duration: 1000 }
     }).timepicker({
         timeFormat: 'h:mm p',
@@ -57,13 +70,8 @@ $(document).ready(function(){
         dropdown: true,
         scrollbar: true
     });
-    // debugger
     
-    $( "#inputDate" ).datepicker({
-        dateFormat: "yy-mm-dd"
-    });
-    
-    $( "#inputPeople" ).tooltip({
+    inputPeople.tooltip({
         hide: { effect: "explode", duration: 1000 }
     });
 
@@ -119,8 +127,27 @@ $(document).ready(function(){
                 required: "Please select how many people for the resevation.",
             },
         },
-        submitHandler: function() { 
-            //
+
+        submitHandler: function() {
+            var reservationModal = $("#reservationModal");
+            reservationModal.dialog({
+                modal: true,
+                buttons: {
+                    "OK": function() {
+                        $(this).dialog("close");
+                        inputFullName.val("");
+                        inputEmail.val("");
+                        inputPhone.val("");
+                        inputDate.val("");
+                        inputTime.val("");
+                        inputPeople.val("");
+                    }
+                },
+                open: function( event, ui ){
+                    dateModal.text("Date: " + inputDate.val());
+                    timeModal.text("Time: " + inputTime.val());
+                },
+            });
 
             return false; 
         }
