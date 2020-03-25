@@ -107,6 +107,21 @@
     margin-top: 3%;
 }
 
+.testimonial-section-heading{
+    font-family: 'Merriweather', serif;
+}
+.testimonial-section-heading h3{
+    font-size: 1.9rem;
+    color: #2B94D1;
+    font-weight: 600;
+}
+
+.testimonial-section-heading p{
+    padding: 1% 27%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #424242;
+}
 .form-group{
     margin: 25px 0;
 }
