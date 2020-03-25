@@ -16,10 +16,16 @@ $(document).ready(function(){
     $(".jcarousel").jcarouselAutoscroll();
 
     // On mouse hover Stop Auto Scroll
-    // $('.jcarousel').jcarouselAutoscroll({
-    //     autostart: false
-    // });
+    $(".jcarousel").on({
+        mouseenter: function(){
+            $('.jcarousel').jcarouselAutoscroll('stop');
+        },
+        mouseleave: function(){
+            $('.jcarousel').jcarouselAutoscroll('start');
+        }
+    });
 
+    
     // Set the controls
     $(".jcarousel-control-prev").jcarouselControl({
         target: '-=1'
