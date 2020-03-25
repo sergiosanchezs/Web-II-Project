@@ -21,7 +21,6 @@ $(document).ready(function(){
         availableQuestionsArray.push(eachQuestion);
     }
 
-
     var availableAnswers = $("#accordion p, #accordion2 p");
     // template '[[question1, answer1], [question2, answer2], [question3, answer3]]'
     var questionAndAnswerArray = [] // 2D array of questions and answers
