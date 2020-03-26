@@ -12,7 +12,6 @@ $('[data-jcarousel-control]').each(function() {
     el.jcarouselControl(el.data());
 });
 
-
 var jcarousel = $('.jcarousel');
 
 jcarousel
@@ -50,5 +49,22 @@ $('.jcarousel-pagination')
             return '<a href="#' + page + '">' + page + '</a>';
         }
     });
+
+    var galleryCarousel = $("#gallery-carousel");
+    var galleryHeader =  $(".header");
+    galleryCarousel.hide();
+    galleryHeader.hide();
+
+    setTimeout(() => {
+        galleryHeader.show( "clip", {}, 800, function (){
+            setTimeout(() => {
+                galleryCarousel.show( "puff", {}, 800 );
+            }, 200);
+        });
+    }, 100);
+
+
+
+
 });
 
