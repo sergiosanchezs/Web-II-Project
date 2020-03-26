@@ -1,6 +1,8 @@
 $(document).ready(function(){
     // alert("working");
 
+    $("#donationsModal").hide();
+
     var title = $( "#title" );
 
 	title.hide();
@@ -18,10 +20,6 @@ $(document).ready(function(){
         open: function( event, ui ) {
             ui.tooltip.animate({ top: ui.tooltip.position().top + 8 }, "fast" );
         }
-    });
-
-    $(".btn-submit").click(function(){
-        var form = $("#form");
     });
 
     $('#inputOrgPhone').usPhoneFormat({
@@ -163,7 +161,22 @@ $(document).ready(function(){
                 required: "Please, check the box to continue"
             }
         },
+
+        submitHandler: function() { 
+            var donationsModal = $("#donationsModal");
+            donationsModal.dialog({
+                modal: true,
+                buttons: {
+                    "OK": function() {
+                        $(this).dialog("close");
+                    }
+                }
+                
+            });
+            return false; 
+        }
     });
+
 
     
     $('#checkboxAddress').click(function(){
