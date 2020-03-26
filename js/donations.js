@@ -1,6 +1,14 @@
 $(document).ready(function(){
     // alert("working");
 
+    var title = $( "#title" );
+
+	title.hide();
+	
+	setTimeout(function() {
+		title.show("fade", 1000);
+	}, 300);
+
     $(".tooltip-control").tooltip({
         position: {
             my: "left top",
@@ -17,6 +25,15 @@ $(document).ready(function(){
         
         return false;
     });
+
+    $('#inputOrgPhone').usPhoneFormat({
+            format:'(xxx) xxx-xxxx'
+    });
+
+    $('#inputPhone').usPhoneFormat({
+        format:'(xxx) xxx-xxxx'
+    });
+        
 
     $("#form").validate({
         rules: {
@@ -178,6 +195,25 @@ $(document).ready(function(){
         { width: 800 },
         3000
     );
+
+    var availableTags = [
+        "Alberta",
+        "British Columbia",
+        "Manitoba",
+        "New Brunswick",
+        "Newfoundland and Labrador",
+        "Northwest Territories",
+        "Nova Scotia",
+        "Nunavut",
+        "Ontario",
+        "Prince Edward Island",
+        "Quebec",
+        "Saskatchewan",
+        "HasYukonkell",
+      ];
+      $( "#inputState1" ).autocomplete({
+        source: availableTags
+      });
         
     
 
