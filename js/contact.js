@@ -13,6 +13,10 @@ $(document).ready(function(){
         }
     });
 
+    $('#inputPhone').usPhoneFormat({
+        format:'(xxx) xxx-xxxx'
+    });
+
     $(".btn-send-message").click(function(){
 
         // Checks if the form is valid when submited
