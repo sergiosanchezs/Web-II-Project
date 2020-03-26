@@ -21,9 +21,7 @@ $(document).ready(function(){
     });
 
     $(".btn-submit").click(function(){
-        alert("Working");
-        
-        return false;
+        var form = $("#form");
     });
 
     $('#inputOrgPhone').usPhoneFormat({
@@ -164,7 +162,6 @@ $(document).ready(function(){
             checkboxYo: {
                 required: "Please, check the box to continue"
             }
-
         },
     });
 

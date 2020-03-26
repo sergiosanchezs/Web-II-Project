@@ -24,7 +24,7 @@ $(document).ready(function(){
         var firstName = $("#inputFirstName"), email = $("#inputEmail"), message = $("#inputMessage");
 
         if (form.valid()) {
-            alert("Message sent!");  
+            $("#contactModal").modal('show'); 
         }
 
         if (firstName.valid()) {
@@ -48,6 +48,8 @@ $(document).ready(function(){
 
         return false;
     });
+
+    
 
     $("#contact-form").validate({
         rules: {
