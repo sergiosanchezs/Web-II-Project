@@ -1,10 +1,30 @@
-section {
+.section {
     margin-left: 10%;
     margin-right: 10%;
 }
 
 strong {
     font-weight: bolder;
+}
+
+.bg-img {
+    background-image: url(../images/bg_8.jpg);
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: auto;
+    /* padding: 5%; */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .6);
+    height: auto;
+}
+
+.line {
+    border-bottom: 1px solid;
+    border-color: white;
 }
 
 .img {

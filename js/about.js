@@ -3,19 +3,13 @@ $(document).ready(function(){
 	$( "#tabs" ).tabs({
         collapsible: true
 	});
-	
-	var title = $( ".slogan_about" );
-	var subTitle = $( "#title" );
+
+	var title = $( "#title" );
 
 	title.hide();
-	subTitle.hide();
 	
 	setTimeout(function() {
 		title.show("fade", 1000);
-	}, 300);
-
-	setTimeout(function() {
-		subTitle.show("fade", 1000);
 	}, 300);
 
 	var main = $("main");
@@ -31,7 +25,7 @@ $(document).ready(function(){
 	});
 
 	$(".btn-deals").click(function() {
-		main.load("deals.html");
+		main.load("catering.html");
 		$(window).scrollTop(0);
 	});
 
