@@ -14,27 +14,38 @@ $(document).ready(function(){
     var isCollapsed = false;
     // height: 282px;
     navbarButton.click(function(){
-        if (isCollapsed){
-            navbarMenu.removeClass("collapse");
-            navbarMenu.removeClass("show");
-            navbarMenu.addClass("collapsing");
-            setTimeout(() => {
-                navbarMenu.removeClass("collapsing");
-                navbarMenu.addClass("collapse");
-            }, 100);
-            isCollapsed = false;
-        } else {
-            navbarMenu.css("height", "282px");
-            navbarMenu.addClass("collapsing show");
-            navbarMenu.removeClass("collapse");
-            setTimeout(() => {
-                navbarMenu.removeClass("collapsing");
-                navbarMenu.addClass("collapse");
-                navbarMenu.css("height", "");
-            }, 500);
-            isCollapsed = true;
-        }
+        MenuBarCollapsible();
     });
+
+    function MenuBarCollapsible() {
+        if (isCollapsed)
+            collapsingTheNavBar();
+        else
+            uncollapsingTheNavBar();
+    }
+    
+    function collapsingTheNavBar() {
+        navbarMenu.removeClass("collapse");
+        navbarMenu.removeClass("show");
+        navbarMenu.addClass("collapsing");
+        setTimeout(() => {
+            navbarMenu.removeClass("collapsing");
+            navbarMenu.addClass("collapse");
+        }, 100);
+        isCollapsed = false;
+    }
+
+    function uncollapsingTheNavBar() {
+        navbarMenu.css("height", "282px");
+        navbarMenu.addClass("collapsing show");
+        navbarMenu.removeClass("collapse");
+        setTimeout(() => {
+            navbarMenu.removeClass("collapsing");
+            navbarMenu.addClass("collapse");
+            navbarMenu.css("height", "");
+        }, 500);
+        isCollapsed = true;
+    }
 
     // Adding the active class to the current page
     var main = $("main");
@@ -79,6 +90,7 @@ $(document).ready(function(){
         main.load(urlReal, function(){      // This will load the page
             $(".main_nav").removeClass("active");   // after page loaded, all the elements with the class "main_nav" will be selected and remove active class
             $(urlHashTag).addClass("active");      // It will add active class to the element clicked.
+            collapsingTheNavBar();
             $(window).scrollTop(0);
         });
     });
