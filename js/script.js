@@ -9,6 +9,33 @@ $(document).ready(function(){
     $('#imgF5').zoom();
     $('#imgF6').zoom();
 
+    var navbarButton = $("#navbar-button");
+    var navbarMenu = $("#navbarTiaserMenu");
+    var isCollapsed = false;
+    // height: 282px;
+    navbarButton.click(function(){
+        if (isCollapsed){
+            navbarMenu.removeClass("collapse");
+            navbarMenu.removeClass("show");
+            navbarMenu.addClass("collapsing");
+            setTimeout(() => {
+                navbarMenu.removeClass("collapsing");
+                navbarMenu.addClass("collapse");
+            }, 100);
+            isCollapsed = false;
+        } else {
+            navbarMenu.css("height", "282px");
+            navbarMenu.addClass("collapsing show");
+            navbarMenu.removeClass("collapse");
+            setTimeout(() => {
+                navbarMenu.removeClass("collapsing");
+                navbarMenu.addClass("collapse");
+                navbarMenu.css("height", "");
+            }, 500);
+            isCollapsed = true;
+        }
+    });
+
     // Adding the active class to the current page
     var main = $("main");
 
