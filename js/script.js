@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    
     // hide Modals
     $("#subscribeModal").hide();
     $("#confirmModal").hide();
@@ -58,19 +57,23 @@ $(document).ready(function(){
     });
 
 	$(".faq-button").click(function() {
+        updateURI("faq");
+        $(".main_nav").removeClass("active");
         main.load("faq.html");
         $(window).scrollTop(0);
     });
 
-    $(".bookATable-button, #bookATable").click(function() {
-        var url = window.location.href;
+    function updateURI(page) {
         var origin = window.location.origin;
         var pathname = window.location.pathname;
-        window.location.href = origin + pathname + "#" + "bookATable";
+        window.location.href = origin + pathname + "#" + page;
+    }
+
+    $(".bookATable-button, #bookATable").click(function() {
+        updateURI("bookATable");
         $(window).scrollTop(0);
         location.reload();
     });
-    
 
     $("#emailSubsForm").validate({
         rules: {

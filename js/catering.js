@@ -16,12 +16,22 @@ $(document).ready(function(){
 
     var main = $("main");
 
+    function updateURI(page) {
+      var origin = window.location.origin;
+      var pathname = window.location.pathname;
+      window.location.href = origin + pathname + "#" + page;
+  }
+
     $("#btn-menu").click(function() {
+      updateURI("menu");
+      $("#menu").addClass("active");
 		main.load("menu.html");
 		$(window).scrollTop(0);
     });
     
     $("#btn-contact").click(function() {
+      updateURI("contact");
+      $("#contact").addClass("active");
 		main.load("contact.html");
 		$(window).scrollTop(0);
 	});
@@ -61,14 +71,14 @@ $(document).ready(function(){
         }
      );
 
-     $('.arrow-up').scrollAnchor({
-        scrollStart: function () {
-          $(".popup").text("Scrolling...");
-        },
-        scrollEnd: function () {
-          $(".popup").text("Done!");
-        }
-      });
+   //   $('.arrow-up').scrollAnchor({
+   //      scrollStart: function () {
+   //        $(".popup").text("Scrolling...");
+   //      },
+   //      scrollEnd: function () {
+   //        $(".popup").text("Done!");
+   //      }
+   //    });
 
     
 });

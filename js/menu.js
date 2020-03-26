@@ -61,10 +61,19 @@ $(document).ready(function(){
         setTimeout(unFoldCards, 2000);
     });
 
+    function updateURI(page) {
+        var origin = window.location.origin;
+        var pathname = window.location.pathname;
+        window.location.href = origin + pathname + "#" + page;
+    }
+
     // Load Book a table on click of the "Make a reservation" button
     $(".pricing-card button").click(function() {
-        $("main").load("bookatable.html");
+        updateURI("bookatable");
+        $(".main_nav").removeClass("active");
+        // $("main").load("bookatable.html");
         // Scroll the window to the top
         $(window).scrollTop(0);
+        location.reload();
     });
 });
