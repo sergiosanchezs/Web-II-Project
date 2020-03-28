@@ -108,8 +108,8 @@ $(document).ready(function(){
         window.location.href = origin + pathname + "#" + page;
     }
 
-    $(".bookATable-button, #bookATable").click(function() {
-        updateURI("bookATable");
+    $(".bookATable-button, #bookatable").click(function() {
+        updateURI("bookatable");
         $(window).scrollTop(0);
         location.reload();
     });
