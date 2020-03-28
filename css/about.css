@@ -47,6 +47,13 @@ strong {
     margin-top: 20px;
 }
 
+  
+@media only screen and (max-width: 992px) {
+    .img, .img2{
+        height: 50rem;
+    }
+}
+
 .tangerine_font {
     font-family: 'Tangerine', cursive;
     color: #2B94D1 !important;    
