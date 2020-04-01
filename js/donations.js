@@ -29,6 +29,8 @@ $(document).ready(function(){
     $('#inputPhone').usPhoneFormat({
         format:'(xxx) xxx-xxxx'
     });
+
+    
         
 
     $("#form").validate({
@@ -75,9 +77,6 @@ $(document).ready(function(){
                 required: true
             },
             inputTitle: {
-                required: true
-            },
-            inputFile1: {
                 required: true
             },
             inputStreet2: {
@@ -141,9 +140,6 @@ $(document).ready(function(){
             },
             inputTitle: {
                 required: "Title is required"
-            },
-            inputFile1: {
-                required: "Attach at least one document."
             },
             inputStreet2: {
                 required: "Street is required"
@@ -224,6 +220,14 @@ $(document).ready(function(){
       $( "#inputState1" ).autocomplete({
         source: availableTags
       });
+
+    // Dropzone.options.myAwesomeDropzone = {
+    //     paramName: "file", // The name that will be used to transfer the file
+    //     maxFilesize: 2, // MB
+    //     accept: function(file, done) {
+    //         done();
+    //     }
+    // };
         
     
 
