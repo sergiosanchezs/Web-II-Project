@@ -7,6 +7,15 @@
     min-height: auto;
 }
 
+.container-file {
+    width: 40%;
+}
+
+.container-file .dropzone {
+    border: 2px dashed blue;
+    margin-bottom: 30px;
+}
+
 .overlay {
     background-color: rgba(0, 0, 0, .6);
     height: auto;
