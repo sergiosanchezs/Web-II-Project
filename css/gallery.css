@@ -141,3 +141,26 @@
     -moz-box-shadow: 0 0 2px #F0EFE7;
     box-shadow: 0 0 2px #F0EFE7;
 }
+
+.img-loc { 
+    max-height: 680px; 
+}
+/* Breakpoint at 1200px */
+@media (max-width: 35em){
+	.img-loc { max-height: 500px; }
+}
+
+/* Breakpoint at 800px */
+@media (min-width: 35.01em){
+	.img-loc { max-height: 400px; }
+}
+
+/* Breakpoint at 1000px */
+@media (min-width: 56.25em){
+	.img-loc { max-height: 550px; }
+}
+
+/* Breakpoint at 1200px */
+@media (min-width: 75em){ 
+	.img-loc { max-height: 680px; }
+}

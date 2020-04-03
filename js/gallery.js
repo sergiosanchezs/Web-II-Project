@@ -58,10 +58,24 @@ $('.jcarousel-pagination')
     setTimeout(() => {
         galleryHeader.show( "clip", {}, 800, function (){
             setTimeout(() => {
-                galleryCarousel.show( "puff", {}, 800 );
+                galleryCarousel.show( "puff", 800 );
             }, 200);
         });
     }, 100);
+
+
+    var locationsSection = $("#locationsSection");
+    $("#locationsBtn").click(function(){
+        locationsSection.toggle("slide", 1500);
+        var locationsBtn = $("#locationsBtn");
+        var locationsText = $("#locationsBtn").text();
+        var arrayText = locationsText.split(" ");
+        if (arrayText[0] == "Show")
+            locationsBtn.text("Hide Future Locations");
+        else if (arrayText[0] == "Hide")
+            locationsBtn.text("Show Future Locations");
+
+    })
 
 
 
