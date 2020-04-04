@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Programming 2 - Class 10 - jQuery Mobile</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+	<link rel="stylesheet" href="css/mobile_app.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body class="ui-body-b ui-body">
+
+    <div data-role="page"  id="home">
+        
+        <div data-role="header" style="overflow:hidden;">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+            <!--         <li><a href="#shop" data-icon="home">Menu</a></li> -->
+                    <li><a href="#about" data-icon="user">About Us</a></li>
+                    <li><a href="#contact" data-icon="phone">Contact Us</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="listCont">
+            <ul data-role="listview" data-filter="true"
+                    data-inset="true"
+                    data-filter-placeholder="Search Cars..." >
+            <!-- data-autodividers="true"  -->
+                <li><a href="#">
+                    <img src="images/locations/loc1.jpg">
+                    <h2>Location 1</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+                <li><a href="#">
+                    <img src="images/locations/loc2.jpg">
+                    <h2>Location 2</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+                <li><a href="#">
+                    <img src="images/locations/loc3.jpg">
+                    <h2>Location 3</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+                <li><a href="#">
+                    <img src="images/locations/loc4.jpg">
+                    <h2>Location 4</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+                <li><a href="#">
+                    <img src="images/locations/loc5.jpg">
+                    <h2>Location 5</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+                <li><a href="#">
+                    <img src="images/locations/loc6.jpg">
+                    <h2>Location 6</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+                <li><a href="#">
+                    <img src="images/locations/loc7.jpg">
+                    <h2>Location 7</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+                <li><a href="#">
+                    <img src="images/locations/loc8.jpg">
+                    <h2>Location 8</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+                <li><a href="#">
+                    <img src="images/locations/loc9.jpg">
+                    <h2>Location 9</h2>
+                    <p>Japanese automaker Honda</p></a>
+                </li>
+            </ul>
+        </div>
+        </div><!-- /content -->
+
+        <div data-role="footer" style="overflow:hidden;">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="about">
+        
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#about" data-icon="user" class="ui-btn-active">About Us</a></li>
+                    <li><a href="#contact" data-icon="phone">Contact Us</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p>Page content goes here.</p>
+        </div><!-- /content -->
+
+        <div data-role="footer" style="overflow:hidden;">
+            <h4>Page Footer</h4>
+    </div><!-- /page -->
+
+    <div data-role="page" id="contact">
+        
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#about" data-icon="user">About Us</a></li>
+                    <li><a href="#contact" data-icon="phone" class="ui-btn-active">Contact Us</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p>Page content goes here.</p>
+        </div><!-- /content -->
+
+        <div data-role="footer" style="overflow:hidden;">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+</body>
+</html>
+
