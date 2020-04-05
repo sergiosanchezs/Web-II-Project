@@ -1,5 +1,5 @@
 .listCont {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    max-height: 400px;
+    max-height: 700px;
 }
