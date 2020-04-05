@@ -1,5 +1,7 @@
-.listCont {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    max-height: 700px;
+
+
+/** Footer **/
+
+.footer{
+    text-align: center;
 }
