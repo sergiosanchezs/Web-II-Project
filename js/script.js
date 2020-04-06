@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     // hide Modals
     $("#subscribeModal").hide();
     $("#confirmModal").hide();
