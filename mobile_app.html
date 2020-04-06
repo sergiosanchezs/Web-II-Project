@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tiaser Square Retaurant</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiaser Square Retaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
     <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.css">
     <link rel="stylesheet" href="css/theme-classic.css" />
-	<link rel="stylesheet" href="css/mobile_app.css" />
+    <link rel="stylesheet" href="css/mobile_app.css" />
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -28,7 +28,7 @@
 
         <div role="main" class="home-content ui-content">
 
-            <section>
+            <section class="home-header">
                 <h1>Tiaser Square</h1>
                 <h2>Colombian and Brazilian Food</h2>
                 <p>Tiaser Square is a Brazilian and Colombian restaurant, 
@@ -43,19 +43,40 @@
 
             <section>
                 <h1>Open hours</h1>
+                <div class="ui-grid-a hours-grid">
+                    <div class="ui-block-a hours-container"><div class="hour-item">Monday</div></div>
+                    <div class="ui-block-b hours-container"><div class="hour-item">8:00 - 21:00</div></div>
+                    <div class="ui-block-a hours-container"><div class="hour-item">Tuesday</div></div>
+                    <div class="ui-block-b hours-container"><div class="hour-item">8:00 - 21:00</div></div>
+                    <div class="ui-block-a hours-container"><div class="hour-item">Wednesday</div></div>
+                    <div class="ui-block-b hours-container"><div class="hour-item">8:00 - 21:00</div></div>
+                    <div class="ui-block-a hours-container"><div class="hour-item">Thursday</div></div>
+                    <div class="ui-block-b hours-container"><div class="hour-item">8:00 - 21:00</div></div>
+                    <div class="ui-block-a hours-container"><div class="hour-item">Friday</div></div>
+                    <div class="ui-block-b hours-container"><div class="hour-item">8:00 - 21:00</div></div>
+                    <div class="ui-block-a hours-container"><div class="hour-item">Saturday</div></div>
+                    <div class="ui-block-b hours-container"><div class="hour-item">8:00 - 21:00</div></div>
+                    <div class="ui-block-a hours-container"><div class="hour-item">Sunday</div></div>
+                    <div class="ui-block-b hours-container"><div class="hour-item">8:00 - 21:00</div></div>
+                </div>
             </section>
 
             <section>
                 <h1>Menu</h1>
                 <p>We have a broad menu with several options from breakfast to dinner.</p>
-                <a href="#menu" class="ui-shadow ui-btn ui-corner-all">See Menu</a>
+                <div class="ui-grid-b home-grid">
+                    <div class="ui-block-a"><img src="images/d-3.jpg" alt="" srcset="" style="max-width: 100%;"></div>
+                    <div class="ui-block-b"><img src="images/d-1.jpg" alt="" srcset="" style="max-width: 100%;"></div>
+                    <div class="ui-block-c"><img src="images/d-5.jpg" alt="" srcset="" style="max-width: 100%;"></div>
+                </div>
+                <a href="#menu" class="ui-shadow ui-btn ui-corner-all ui-btn-inline">See Menu</a>
             </section>
 
         </div><!-- /content -->
 
         <div class="footer" data-role="footer" style="overflow:hidden;">
             <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-arrow-l">Back to computer view</a>
-		</div><!-- /footer -->
+        </div><!-- /footer -->
     </div><!-- /page -->
 
     <!-- ######################################################################################################### -->
@@ -554,7 +575,7 @@
 
         <div class="footer" data-role="footer" style="overflow:hidden;">
             <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-arrow-l">Back to computer view</a>
-		</div><!-- /footer -->
+        </div><!-- /footer -->
     </div><!-- /page -->
 
     <!-- ######################################################################################################### -->
