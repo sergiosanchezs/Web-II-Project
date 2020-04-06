@@ -105,7 +105,7 @@ h2 {
     padding: 0;
 }
 .btn-div-footer-top{
-    padding: 0 6% 0 0;
+    padding: 0;
 }
 
 /* When the screen width is less than 1100px, the padding is 0 */
@@ -113,7 +113,10 @@ h2 {
     .btn-div-footer-top{
         padding: 0;
     }
-  }
+}
+
+
+
 
 .main_footer{
     background-color: #c9d6df;
