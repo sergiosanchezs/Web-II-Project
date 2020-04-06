@@ -3,12 +3,14 @@
 <head>
 	<title>Tiaser Square Retaurant</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.css">
+    <link rel="stylesheet" href="css/theme-classic.css" />
 	<link rel="stylesheet" href="css/mobile_app.css" />
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
-<body class="ui-body-b">
+<body>
 
     <!-- ######################################################################################################### -->
 
@@ -58,8 +60,8 @@
 
     <!-- ######################################################################################################### -->
 
-    <div data-role="page"  id="menu">
-        
+    <div data-role="page"  id="menu" class="ui-page-theme-a">
+        <div class="ui-panel-wrapper">
         <div data-role="header">
             <div data-role="navbar">
                 <ul>
@@ -84,7 +86,7 @@
                         </ul>
                     </div>
                     <!----------------------------------------------------------------------->
-                    <div id="breakfast" class="ui-body-d ui-content">
+                    <div id="breakfast" class="ui-body-a ui-content">
                         <h2>Breakfast</h2>
                         <ul data-role="listview" 
                             data-inset="true" >
@@ -92,7 +94,7 @@
                                 <img src="images/bf-1.jpg" class="popphoto" alt="Power Breakfast">
                                 <h2>Power</h2>
                                 <p>Eggs, sausages, bacon strips, grilled tomatoes, soy bean and mushrooms.</p></a>
-                                <div data-role="popup" id="power" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="power" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/bf-1.jpg" style="max-height:350px;" alt="Power breakfast">
                                     <h2>Power</h2>
@@ -103,7 +105,7 @@
                                 <img src="images/bf-2.jpg" alt="Fit breakfast">
                                 <h2>Fit</h2>
                                 <p>Eggs, bread or pancakes, apple or banana, papaya or kiwi and almonds.</p></a>
-                                <div data-role="popup" id="fit" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="fit" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/bf-2.jpg" style="max-height:350px;" alt="Fit breakfast">
                                     <h2>Fit</h2>
@@ -114,7 +116,7 @@
                                 <img src="images/bf-3.jpg" alt="Gourmet breakfast">
                                 <h2>Gourmet</h2>
                                 <p>Egg, tortilha, avocado, ground meat, creamy sauce or any other Tiaser's sauces.</p></a>
-                                <div data-role="popup" id="gourmet" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="gourmet" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/bf-3.jpg" style="max-height:350px;" alt="Gourmet breakfast">
                                     <h2>Gourmet</h2>
@@ -125,7 +127,7 @@
                                 <img src="images/bf-4.jpg" alt="Classic 1 breakfast">
                                 <h2>Classic 1</h2>
                                 <p>Eggs, bacon, ham, sausage, bread and pancakes.</p></a>
-                                <div data-role="popup" id="classic1" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="classic1" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/bf-4.jpg" style="max-height:350px;" alt="Classic 1 breakfast">
                                     <h2>Classic 1</h2>
@@ -136,7 +138,7 @@
                                 <img src="images/bf-5.jpg" alt="Classic 2 breakfast">
                                 <h2>Classic 2</h2>
                                 <p>Eggs, bacon strips and our famous pancakes.</p></a>
-                                <div data-role="popup" id="classic2" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="classic2" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/bf-5.jpg" style="max-height:350px;" alt="Classic 2 breakfast">
                                     <h2>Classic 2</h2>
@@ -147,7 +149,7 @@
                                 <img src="images/bf-6.jpg" alt="Bulk breakfast">
                                 <h2>Bulk</h2>
                                 <p>Grilled bread, eggs, bacon strips and red pepper.</p></a>
-                                <div data-role="popup" id="bulk" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="bulk" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/bf-6.jpg" style="max-height:350px;" alt="Bulk breakfast">
                                     <h2>Bulk</h2>
@@ -157,7 +159,7 @@
                         </ul>
                     </div>
                     <!----------------------------------------------------------------------->
-                    <div id="lunch" class="ui-body-d ui-content">
+                    <div id="lunch" class="ui-body-a ui-content">
                         <h2>Lunch</h2>
                         <ul data-role="listview" 
                             data-inset="true" >
@@ -165,7 +167,7 @@
                                 <img src="images/lu-4.jpg" alt="Freijoada Lunch">
                                 <h2>Feijoada</h2>
                                 <p>Black beans, onions, ham, ham hocks, bacon, bay leaves, cilantro, fresh parsley.</p></a>
-                                <div data-role="popup" id="freijoada" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="freijoada" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/lu-4.jpg" style="max-height:350px;" alt="Freijoada Lunch">
                                     <h2>Feijoada</h2>
@@ -176,7 +178,7 @@
                                 <img src="images/lu-5.jpg" alt="Bandeja Paisa Lunch">
                                 <h2>Bandeja Paisa</h2>
                                 <p>Red beans, fried pork rind, rice, meat, fried egg, platain, arepa and avocado.</p></a>
-                                <div data-role="popup" id="bandeja" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="bandeja" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/lu-5.jpg" style="max-height:350px;" alt="Bandeja Paisa Lunch">
                                     <h2>Bandeja Paisa</h2>
@@ -187,7 +189,7 @@
                                 <img src="images/lu-3.jpg" alt="Carne de Sol Lunch">
                                 <h2>Carne de Sol</h2>
                                 <p>Dryed meat, cassava, fries, green pepper and sauce.</p></a>
-                                <div data-role="popup" id="carne" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="carne" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/lu-3.jpg" style="max-height:350px;" alt="Carne de Sol Lunch">
                                     <h2>Carne de Sol</h2>
@@ -198,7 +200,7 @@
                                 <img src="images/lu-1.jpg" alt="Stuffed Arepas Lunch">
                                 <h2>Stuffed Arepas</h2>
                                 <p>Traditional dish in Colombia, consists of arepas, ground meat, chicken, beans and lemon.</p></a>
-                                <div data-role="popup" id="arepas" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="arepas" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/lu-1.jpg" style="max-height:350px;" alt="Stuffed Arepas Lunch">
                                     <h2>Stuffed Arepas</h2>
@@ -209,7 +211,7 @@
                                 <img src="images/lu-2.jpg" alt="Moqueca Lunch">
                                 <h2>Moqueca</h2>
                                 <p>Halibut, swordfish or cor, lime, olive oil, onions, paprika, red pepper, cilantro, garlic and coconut milk.</p></a>
-                                <div data-role="popup" id="moqueca" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="moqueca" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/lu-2.jpg" style="max-height:350px;" alt="Moqueca Lunch">
                                     <h2>Moqueca</h2>
@@ -220,7 +222,7 @@
                                 <img src="images/lu-6.jpg" alt="Mute Santandereano Lunch">
                                 <h2>Mute Santandereano</h2>
                                 <p>Tradicional Colombian soup with beef, beef ribs, pork meat and more.</p></a>
-                                <div data-role="popup" id="mute" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="mute" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/lu-6.jpg" style="max-height:350px;" alt="Mute Santandereano Lunch">
                                     <h2>Mute Santandereano</h2>
@@ -230,7 +232,7 @@
                         </ul>
                     </div>
                     <!----------------------------------------------------------------------->
-                    <div id="dinner" class="ui-body-d ui-content">
+                    <div id="dinner" class="ui-body-a ui-content">
                         <h2>Dinner</h2>
                         <ul data-role="listview"
                             data-inset="true" >
@@ -238,7 +240,7 @@
                                 <img src="images/d-1.jpg" alt="Grilled Salmon Lunch">
                                 <h2>Grilled Salmon</h2>
                                 <p>Our chef's favorite. Grilled salmon and salad.</p></a>
-                                <div data-role="popup" id="salmon" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="salmon" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/d-1.jpg" style="max-height:350px;" alt="Grilled Salmon Lunch">
                                     <h2>Grilled Salmon</h2>
@@ -249,7 +251,7 @@
                                 <img src="images/d-2.jpg" alt="Roasted Lamb Lunch">
                                 <h2>Roasted Lamb</h2>
                                 <p>Potato galettes with roasted lamb racks.</p></a>
-                                <div data-role="popup" id="lamb" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="lamb" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/d-2.jpg" style="max-height:350px;" alt="Roasted Lamb Lunch">
                                     <h2>Roasted Lamb</h2>
@@ -260,7 +262,7 @@
                                 <img src="images/d-3.jpg" alt="Sea Scallop Lunch">
                                 <h2>Sea Scallops</h2>
                                 <p>Seared scallops tossed in Tiaser's hot bacon dressing.</p></a>
-                                <div data-role="popup" id="scallops" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="scallops" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/d-3.jpg" style="max-height:350px;" alt="Sea Scallop Lunch">
                                     <h2>Sea Scallops</h2>
@@ -271,7 +273,7 @@
                                 <img src="images/d-4.jpg" alt="Fillet Mignon Lunch">
                                 <h2>Fillet Mignon</h2>
                                 <p>Fillet mignon, brocoli or asparagus, wood sauce and gren onion.</p></a>
-                                <div data-role="popup" id="mignon" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="mignon" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/d-4.jpg" style="max-height:350px;" alt="Fillet Mignon Lunch">
                                     <h2>Fillet Mignon</h2>
@@ -282,7 +284,7 @@
                                 <img src="images/d-5.jpg" alt="Tilapia Lunch">
                                 <h2>Tilapia</h2>
                                 <p>Tilapia, mashed potatoes, vegetables, sauce and gren onion.</p></a>
-                                <div data-role="popup" id="tilapia" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="tilapia" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/d-5.jpg" style="max-height:350px;" alt="Tilapia Lunch">
                                     <h2>Tilapia</h2>
@@ -293,7 +295,7 @@
                                 <img src="images/d-6.jpg" alt="Lobster Lunch">
                                 <h2>Lobster</h2>
                                 <p>Lobster, mashed potatoes, pasta or rice and asparagus or brocoli.</p></a>
-                                <div data-role="popup" id="lobster" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="lobster" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/d-6.jpg" style="max-height:350px;" alt="Lobster Lunch">
                                     <h2>Lobster</h2>
@@ -303,7 +305,7 @@
                         </ul>
                     </div>
                     <!----------------------------------------------------------------------->
-                    <div id="drinks" class="ui-body-d ui-content">
+                    <div id="drinks" class="ui-body-a ui-content">
                         <h2>Drinks</h2>
                         <ul data-role="listview" 
                             data-inset="true" >
@@ -311,7 +313,7 @@
                                 <img src="images/dr-1.jpg" alt="Rainbow Drink">
                                 <h2>Rainbow</h2>
                                 <p>Blue liquor, vodka, orange liquor, tonic and lemon.</p></a>
-                                <div data-role="popup" id="rainbow" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="rainbow" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/dr-1.jpg" style="max-height:350px;" alt="Rainbow Drink">
                                     <h2>Rainbow</h2>
@@ -322,7 +324,7 @@
                                 <img src="images/dr-2.jpg" alt="Dry Martini Drink">
                                 <h2>Dry Martini</h2>
                                 <p>Martini, vodka, gyn, olive and strawberry.</p></a>
-                                <div data-role="popup" id="martini" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="martini" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/dr-2.jpg" style="max-height:350px;" alt="Dry Martini Drink">
                                     <h2>Dry Martini</h2>
@@ -333,7 +335,7 @@
                                 <img src="images/dr-3.jpg" alt="Fleurissimo Drink">
                                 <h2>Fleurissimo</h2>
                                 <p>Martin, Crème de violet liqueur, Sugar cube, and Champagne.</p></a>
-                                <div data-role="popup" id="fleurissimo" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="fleurissimo" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/dr-3.jpg" style="max-height:350px;" alt="Fleurissimo Drink">
                                     <h2>Fleurissimo</h2>
@@ -344,7 +346,7 @@
                                 <img src="images/dr-4.jpg" alt="Star Fruit Drink">
                                 <h2>Star Fruit</h2>
                                 <p>Star Fruit, vodka, lemon, mentol liquor and tonic water.</p></a>
-                                <div data-role="popup" id="starfruit" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="starfruit" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/dr-4.jpg" style="max-height:350px;" alt="Star Fruit Drink">
                                     <h2>Star Fruit</h2>
@@ -355,7 +357,7 @@
                                 <img src="images/dr-5.jpg" alt="Fruit Drink">
                                 <h2>Fruit Drink</h2>
                                 <p>Vodka with Strawberry, lemon, grape, pineapple or kiwi.</p></a>
-                                <div data-role="popup" id="fruit" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="fruit" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/dr-5.jpg" style="max-height:350px;" alt="Fruit Drink">
                                     <h2>Fruit Drink</h2>
@@ -366,7 +368,7 @@
                                 <img src="images/dr-6.jpg" alt="A la Mexican Drink">
                                 <h2>A la Mexican</h2>
                                 <p>Vodka, pepper and orange. Everything in the right measure.</p></a>
-                                <div data-role="popup" id="mexican" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="mexican" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/dr-6.jpg" style="max-height:350px;" alt="A la Mexican Drink">
                                     <h2>A la Mexican</h2>
@@ -376,7 +378,7 @@
                         </ul>
                     </div>
                     <!----------------------------------------------------------------------->
-                    <div id="desserts" class="ui-body-d ui-content">
+                    <div id="desserts" class="ui-body-a ui-content">
                         <h2>Desserts</h2>
                         <ul data-role="listview" 
                             data-inset="true" >
@@ -384,7 +386,7 @@
                                 <img src="images/ds-1.jpg" alt="Brigadeiro Desserts">
                                 <h2>Brigadeiro</h2>
                                 <p>Tradicional brazilian candy made with chocolate chips, condensade milk and love.</p></a>
-                                <div data-role="popup" id="brigadeiro" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="brigadeiro" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/ds-1.jpg" style="max-height:350px;" alt="Brigadeiro Desserts">
                                     <h2>Brigadeiro</h2>
@@ -395,7 +397,7 @@
                                 <img src="images/ds-2.jpg" alt="Rice Candy Desserts">
                                 <h2>Rice Candy</h2>
                                 <p>Rice with sugar in a way that you never tasted before.</p></a>
-                                <div data-role="popup" id="ricecandy" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="ricecandy" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/ds-2.jpg" style="max-height:350px;" alt="Rice Candy Desserts">
                                     <h2>Rice Candy</h2>
@@ -406,7 +408,7 @@
                                 <img src="images/ds-3.jpg" alt="Pudim Desserts">
                                 <h2>Pudim</h2>
                                 <p>Brown sugar, condensade milk and jelly.</p></a>
-                                <div data-role="popup" id="pudim" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="pudim" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/ds-3.jpg" style="max-height:350px;" alt="Pudim Desserts">
                                     <h2>Pudim</h2>
@@ -417,7 +419,7 @@
                                 <img src="images/ds-4.jpg" alt="Postre de Natas Desserts">
                                 <h2>Postre de Natas</h2>
                                 <p>Whole milk, sugar, egg yolks, raisins, rum.</p></a>
-                                <div data-role="popup" id="natas" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="natas" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/ds-4.jpg" style="max-height:350px;" alt="Postre de Natas Desserts">
                                     <h2>Postre de Natas</h2>
@@ -428,7 +430,7 @@
                                 <img src="images/ds-5.jpg" alt="Strawberry Meringue Desserts">
                                 <h2>Strawberry Meringue</h2>
                                 <p>Lime juice, vanilla extract, and sliced strawberries.</p></a>
-                                <div data-role="popup" id="meringue" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="meringue" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/ds-5.jpg" style="max-height:350px;" alt="Strawberry Meringue Desserts">
                                     <h2>Strawberry Meringue</h2>
@@ -439,7 +441,7 @@
                                 <img src="images/ds-6.jpg" alt="Cocada Desserts">
                                 <h2>Cocada</h2>
                                 <p>Simple but delicious. Just coconut, milk and sugar.</p></a>
-                                <div data-role="popup" id="cocada" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="cocada" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/ds-6.jpg" style="max-height:350px;" alt="Cocada Desserts">
                                     <h2>Cocada</h2>
@@ -449,7 +451,7 @@
                         </ul>
                     </div>
                     <!----------------------------------------------------------------------->
-                    <div id="wines" class="ui-body-d ui-content">
+                    <div id="wines" class="ui-body-a ui-content">
                         <h2>Wines</h2>
                         <ul data-role="listview"
                             data-inset="true" >
@@ -457,7 +459,7 @@
                                 <img src="images/w-1.jpg" alt="Cabernet Sauvignon Wine">
                                 <h2>Cabernet Sauvignon</h2>
                                 <p>From 2015. The world’s most popular red wine.</p></a>
-                                <div data-role="popup" id="cabernet" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="cabernet" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/w-1.jpg" style="max-height:350px;" alt="Cabernet Sauvignon Wine">
                                     <h2>Cabernet Sauvignon</h2>
@@ -468,7 +470,7 @@
                                 <img src="images/w-2.jpg" alt="Syrah Wine">
                                 <h2>Syrah</h2>
                                 <p>Intense red wine, fruit-driven, and crimson-hued wine.</p></a>
-                                <div data-role="popup" id="syrah" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="syrah" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/w-2.jpg" style="max-height:350px;" alt="Syrah Wine">
                                     <h2>Syrah</h2>
@@ -479,7 +481,7 @@
                                 <img src="images/w-3.jpg" alt="Zinfandel Wine">
                                 <h2>Zinfandel</h2>
                                 <p>A reliable blend, this offers bright cherry and berry flavors.</p></a>
-                                <div data-role="popup" id="zinfandel" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="zinfandel" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/w-3.jpg" style="max-height:350px;" alt="Zinfandel Wine">
                                     <h2>Zinfandel</h2>
@@ -490,7 +492,7 @@
                                 <img src="images/w-4.jpg" alt="Pinot Noir Wine">
                                 <h2>Pinot Noir</h2>
                                 <p>Elegant and graceful. Fresh cherries and plums with layers of sweet fruit on the palate.</p></a>
-                                <div data-role="popup" id="pinot" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="pinot" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/w-4.jpg" style="max-height:350px;" alt="Pinot Noir Wine">
                                     <h2>Pinot Noir</h2>
@@ -501,7 +503,7 @@
                                 <img src="images/w-5.jpg" alt="Chardonnay Wine">
                                 <h2>Chardonnay</h2>
                                 <p>The Carmel Selected Chardonnay exhibits intense citrus aromas, and crisp taste mouthwatering.</p></a>
-                                <div data-role="popup" id="chardonnay" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="chardonnay" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/w-5.jpg" style="max-height:350px;" alt="Chardonnay Wine">
                                     <h2>Chardonnay</h2>
@@ -512,7 +514,7 @@
                                 <img src="images/w-6.jpg" alt="Sauvignon Blanc Wine">
                                 <h2>Sauvignon Blanc</h2>
                                 <p>Light and refreshing white wine. Silky, this Sauvignon is not to heavy and can be enjoyed by itself.</p></a>
-                                <div data-role="popup" id="sauvignon" data-overlay-theme="b" data-theme="b" data-corners="true">
+                                <div data-role="popup" id="sauvignon" data-overlay-theme="a" data-theme="a" data-corners="true">
                                     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
                                     <img src="images/w-6.jpg" style="max-height:350px;" alt="Sauvignon Blanc Wine">
                                     <h2>Sauvignon Blanc</h2>
@@ -528,7 +530,8 @@
 
         <div class="footer" data-role="footer" style="overflow:hidden;">
             <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-arrow-l">Back to computer view</a>
-		</div><!-- /footer -->
+        </div><!-- /footer -->
+        </div>
     </div><!-- /page -->
 
     <!-- ######################################################################################################### -->
