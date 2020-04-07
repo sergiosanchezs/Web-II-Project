@@ -571,7 +571,44 @@
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <p>Page content goes here.</p>
+
+            <h1>Contact Us</h1>
+
+            <label for="text-basic">First Name:</label>
+            <input type="text" name="text-basic" id="text-basic" value="" placeholder="First name">
+
+            <label for="text-basic">Last Name:</label>
+            <input type="text" name="text-basic" id="text-basic" value="" placeholder="Last name">
+
+            <label for="text-basic">Phone:</label>
+            <input type="text" name="text-basic" id="text-basic" value="" placeholder="Phone">
+
+            <label for="text-basic">Email:</label>
+            <input type="email" name="text-basic" id="text-basic" value="" placeholder="Email">
+
+            <label for="textarea">Message:</label>
+            <textarea cols="40" rows="8" name="textarea" id="textarea" placeholder="Message"></textarea>
+
+            <input type="checkbox" name="checkbox-1a" id="checkbox-1a">
+            <label for="checkbox-1a">I would like to receive news and promotions from Tiaser Square Restaurant by email.</label>
+
+            <input type="checkbox" name="checkbox-2a" id="checkbox-2a" checked="">
+            <label for="checkbox-2a">By checking, you confirm that you agree with the Tiaser Square Terms and Conditions.
+            </label>
+
+            <a href="#termsConditionsDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-button ui-corner-all ui-shadow ui-button-inline ui-button-b">Terms and Conditions<span class="ui-icon ui-icon-delete"></span></a>
+            <div class="termsConditionsDialog" data-role="popup" id="termsConditionsDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <div data-role="toolbar" data-type="header" data-theme="a">
+                <h1>Terms and Conditions</h1>
+                </div>
+                <div role="main" class="ui-content">
+                <p>The Tiaser® Square Terms and Conditions consists of ....</p>
+                </div>
+            </div>
+
+            <a href="#" class="ui-shadow ui-btn ui-corner-all">Send Message</a>
+
         </div><!-- /content -->
 
         <div class="footer" data-role="footer" style="overflow:hidden;">
