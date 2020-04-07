@@ -71,14 +71,5 @@ $(document).ready(function(){
         }
      );
 
-   //   $('.arrow-up').scrollAnchor({
-   //      scrollStart: function () {
-   //        $(".popup").text("Scrolling...");
-   //      },
-   //      scrollEnd: function () {
-   //        $(".popup").text("Done!");
-   //      }
-   //    });
-
     
 });
