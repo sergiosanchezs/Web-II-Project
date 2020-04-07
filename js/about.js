@@ -5,8 +5,10 @@ $(document).ready(function(){
 	});
 
 	var title = $( "#title" );
+	var modal = $( "#aboutModal" );
 
 	title.hide();
+	modal.hide();
 	
 	setTimeout(function() {
 		title.show("fade", 1000);
@@ -42,5 +44,13 @@ $(document).ready(function(){
 	});
 
 	$(".number").counterUp({delay: 10, time: 2000});
+
+	$("#rateit").bind('rated', function (event, value) { $('#value-rate').text('You\'ve rated it: ' + value); });
+    $("#rateit").bind('reset', function () { $('#value-rate').text(''); });
+	$("#rateit").bind('over', function (event, value) { $('#hover-rate').text(value); });
+	
+	$(".btn-about-rate").click(function(){
+		$("#aboutModal").modal('show');
+	});
 
 });

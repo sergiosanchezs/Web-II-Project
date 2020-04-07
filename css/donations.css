@@ -46,6 +46,10 @@
     font-weight: 300;
 }
 
+.content-body {
+    background-color: #f3f3f3;
+}
+
 form .error {
     color: #ff0000;
 }
