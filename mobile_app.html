@@ -572,40 +572,67 @@
 
         <div role="main" class="ui-content">
 
-            <h1>Contact Us</h1>
+            <h1>Contact Us</h1>  
 
-            <form class="mobile-contac-form" id="mobile-contact-form">
+            <form class="mobile-contac-form" id="mobile-contact-form" method="post">
+                <div data-role="content">
 
-                <label for="text-basic">First Name:</label>
-                <input type="text" name="firstName" id="firstName" value="" placeholder="First name">
+                    <fieldset data-role="fieldcontainer">
+                        <label for="text-basic">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" value="" placeholder="First name">
+                        <span id="firstNameSpan">Please, enter your first name.</span>
     
-                <label for="text-basic">Last Name:</label>
-                <input type="text" name="lastName" id="lastName" value="" placeholder="Last name">
+                    </fieldset>
+        
+                    <fieldset data-role="fieldcontainer">
+                        <label for="text-basic">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" value="" placeholder="Last name">
     
-                <label for="text-basic">Phone:</label>
-                <input type="text" name="phone" id="phone" value="" placeholder="Phone">
+                    </fieldset>
+        
+                    <fieldset data-role="fieldcontainer">
+                        <label for="text-basic">Phone:</label>
+                        <input type="text" name="phone" id="phone" value="" placeholder="Phone">
+                        <span id="phoneSpan">Please, enter your phone</span>
     
-                <label for="text-basic">Email:</label>
-                <input type="email" name="email" id="email" value="" placeholder="Email">
+                    </fieldset>
+        
+                    <fieldset data-role="fieldcontainer">
+                        <label for="text-basic">Email:</label>
+                        <input type="email" name="email" id="email" value="" placeholder="Email">
+                        <span id="emailSpan">Please, enter your email</span>
     
-                <label for="textarea">Message:</label>
-                <textarea cols="40" rows="8" name="message" id="message" placeholder="Message"></textarea>
+                    </fieldset>
+        
+                    <fieldset data-role="fieldcontainer">
+                        <label for="textarea">Message:</label>
+                        <textarea cols="40" rows="8" name="message" id="message" placeholder="Message"></textarea>
+                        <span id="messageSpan">Please, enter your message</span>
     
-                <input type="checkbox" name="checkbox-1" id="checkbox-1">
-                <label for="checkbox-1">I would like to receive news and promotions from Tiaser Square Restaurant by email.</label>
+                    </fieldset>
+        
+                    <fieldset data-role="fieldcontainer">
+                        <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                        <label for="checkbox-1">I would like to receive news and promotions from Tiaser Square Restaurant by email.</label>
     
-                <input type="checkbox" name="checkbox-2" id="checkbox-2" checked="">
-                <label for="checkbox-2">By checking, you confirm that you agree with the Tiaser Square Terms and Conditions.
-                </label>
+                    </fieldset>
+        
+                    <fieldset data-role="fieldcontainer">
+                        <input type="checkbox" name="checkbox-2" id="checkbox-2" checked="">
+                        <label for="checkbox-2">By checking, you confirm that you agree with the Tiaser Square Terms and Conditions.
+                        </label>
     
-                <a href="#termsConditionsDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-button ui-corner-all ui-shadow ui-button-inline ui-button-b termsConditionsTitle">Terms and Conditions<span class="ui-icon ui-icon-delete"></span></a>
-                <div class="termsConditionsDialog" data-role="popup" id="termsConditionsDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-                    <div data-role="toolbar" data-type="header" data-theme="a">
-                    <h1>Terms and Conditions</h1>
-                    </div>
-                    <div role="main" class="ui-content">
-                    <p>The Tiaser® Square Terms and Conditions consists of ....</p>
+                    </fieldset>
+        
+                    <a href="#termsConditionsDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-button ui-corner-all ui-shadow ui-button-inline ui-button-b termsConditionsTitle">Terms and Conditions<span class="ui-icon ui-icon-delete"></span></a>
+                    <div class="termsConditionsDialog" data-role="popup" id="termsConditionsDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                        <div data-role="toolbar" data-type="header" data-theme="a">
+                        <h1>Terms and Conditions</h1>
+                        </div>
+                        <div role="main" class="ui-content">
+                        <p>The Tiaser® Square Terms and Conditions consists of ....</p>
+                        </div>
                     </div>
                 </div>
     
@@ -619,6 +646,8 @@
                     <p>Thanks for getting in touch with us.</p>
                     </div>
                 </div>
+
+                <!-- <input data-icon="check" type="submit" value="Send Message" id="btn-submit-mobile"> -->
             </form>
 
         </div><!-- /content -->
