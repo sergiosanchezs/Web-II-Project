@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     // Title animation (when the page is loaded)
     setTimeout(function() {
-        breakfastTitle.show("fade", 1000);
+        breakfastTitle.fadeIn(1000);
     }, 300);
 
     setTimeout(function() {
@@ -49,7 +49,7 @@ $(document).ready(function(){
         }
 
         setTimeout(function() {
-            titleID.show("fade", 1000);
+            titleID.fadeIn(1000);
         }, 300);
 
         setTimeout(function() {
